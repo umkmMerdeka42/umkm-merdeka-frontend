@@ -1,0 +1,44 @@
+{
+  "name": "umkm-merdeka",
+  "version": "1.0.0",
+  "description": "Capstone Project C22-087",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "http-server dist",
+    "build-serve": "npm run build && npm run serve",
+    "lint": "eslint ./src/scripts"
+  },
+  "author": "umkm-merdeka",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.0.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "favicons": "^7.0.2",
+    "favicons-webpack-plugin": "^6.0.0-alpha.2",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.18",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "idb": "^7.1.0",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.8.2",
+    "regenerator-runtime": "^0.13.10"
+  }
+}
