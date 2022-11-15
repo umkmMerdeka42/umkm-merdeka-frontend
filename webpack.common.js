@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugins = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -42,5 +43,6 @@ module.exports = {
         },
       ],
     }),
+    new FaviconsWebpackPlugins('./src/public/icons/favicon.ico'),
   ],
 };
