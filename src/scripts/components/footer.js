@@ -7,7 +7,7 @@ class FooterBar extends HTMLElement {
     this.innerHTML = /* html */ `
       <div class="md:px-12 lg:px-28">
         <div class="container m-auto space-y-6 text-gray-300">
-          <img src="images/UMKM-Merdeka-second.png" alt="logo tailus" class="m-auto w-96" />
+          <img src="images/logo/UMKM-Merdeka-second.png" alt="logo tailus" class="m-auto w-80" />
           <ul
             role="list"
             class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
