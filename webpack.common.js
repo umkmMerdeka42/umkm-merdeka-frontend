@@ -1,7 +1,7 @@
-const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugins = require('favicons-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: {
@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/templates/index.html',
+      template: path.resolve(__dirname, 'src/templates/index.html'),
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -43,6 +43,6 @@ module.exports = {
         },
       ],
     }),
-    new FaviconsWebpackPlugins('./src/public/icons/favicon.ico'),
+    new FaviconsWebpackPlugin('./src/public/icons/UMKM-Merdeka.png'),
   ],
 };
