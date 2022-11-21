@@ -5,6 +5,7 @@ import './components/nav-bar';
 import './components/footer';
 import './components/hero-section';
 import './components/about-us';
+import 'tw-elements';
 import App from './views/app';
 
 const app = new App({

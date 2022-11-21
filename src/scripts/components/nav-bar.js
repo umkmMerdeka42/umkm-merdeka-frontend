@@ -5,7 +5,7 @@ class NavigationBar extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-      <header class="bg-white/90 shadow-nav backdrop-blur-sm fixed top-0 left-0 w-full flex items-center z-10">
+      <header class="bg-white/90 shadow-nav backdrop-blur-sm fixed top-0 left-0 w-full flex items-center z-50">
         <div class = "w-full py-2 lg:py-1">
           <div class="flex items-center justify-between relative">
             <div class="px-4">
@@ -23,16 +23,26 @@ class NavigationBar extends HTMLElement {
               <nav id="drawer" class="scale-0 transition duration-200 ease-in-out absolute lg:block lg:scale-100 py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-3 top-16 lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                 <ul class = "block lg:flex">
                   <li>
-                    <a href="#/home" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Home</a>
+                    <a href="#/home" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Home</a>
                   </li>
                   <li>
-                    <a href="#/katalog" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Katalog</a>
+                    <a href="#/katalog" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Katalog</a>
                   </li>
                   <li>
-                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Whistlist Anda</a>
+                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Whistlist Anda</a>
                   </li>
                   <li>
-                    <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Tentang Kami</a>
+                    <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Tentang Kami</a>
+                  </li>
+                  <li>
+                    <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 lg:ml-2">
+                      <button
+                        type="button"
+                        data-mdb-ripple="true"
+                        data-mdb-ripple-color="light"
+                        class="rounded-sm inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                      >Login</button>
+                    </div>
                   </li>
                 </ul>
               </nav>
