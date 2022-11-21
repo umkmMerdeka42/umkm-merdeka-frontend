@@ -39,6 +39,7 @@
     "idb": "^7.1.0",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.3",
-    "regenerator-runtime": "^0.13.10"
+    "regenerator-runtime": "^0.13.10",
+    "tw-elements": "^1.0.0-alpha12"
   }
 }

@@ -23,16 +23,16 @@ class NavigationBar extends HTMLElement {
               <nav id="drawer" class="scale-0 transition duration-200 ease-in-out absolute lg:block lg:scale-100 py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-3 top-16 lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                 <ul class = "block lg:flex">
                   <li>
-                    <a href="#/home" class="text-base text-gray-900 py-2 mx-8 flex">Home</a>
+                    <a href="#/home" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Home</a>
                   </li>
                   <li>
-                    <a href="#/katalog" class="text-base text-gray-900 py-2 mx-8 flex">Katalog</a>
+                    <a href="#/katalog" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Katalog</a>
                   </li>
                   <li>
-                    <a href="#/whistlist" class="text-base text-gray-900 py-2 mx-8 flex">Whistlist Anda</a>
+                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Whistlist Anda</a>
                   </li>
                   <li>
-                    <a href="#/about-us" class="text-base text-gray-900 py-2 mx-8 flex">Tentang Kami</a>
+                    <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-8 flex transition duration-200 ease-in-out">Tentang Kami</a>
                   </li>
                 </ul>
               </nav>
