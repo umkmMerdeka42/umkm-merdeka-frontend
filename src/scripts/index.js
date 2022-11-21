@@ -6,7 +6,6 @@ import './components/footer';
 import './components/hero-section';
 import App from './views/app';
 
-// eslint-disable-next-line no-unused-vars
 const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#drawer'),
