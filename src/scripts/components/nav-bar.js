@@ -36,12 +36,12 @@ class NavigationBar extends HTMLElement {
                   </li>
                   <li>
                     <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 lg:ml-2">
-                      <button
-                        type="button"
-                        data-mdb-ripple="true"
-                        data-mdb-ripple-color="light"
-                        class="rounded-sm inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                      >Login</button>
+                      <a href="#/login"><button
+                      type="button"
+                      data-mdb-ripple="true"
+                      data-mdb-ripple-color="light"
+                      class="rounded-sm inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    >Login</button></a>
                     </div>
                   </li>
                 </ul>
