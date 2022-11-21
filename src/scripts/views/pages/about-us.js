@@ -1,4 +1,4 @@
-import'../../components/about-us';
+import '../../components/about-us';
 
 const AboutUs = {
   async render() {
