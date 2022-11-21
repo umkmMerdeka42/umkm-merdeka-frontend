@@ -16,14 +16,16 @@ class HeroSection extends HTMLElement {
           class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
         >
           <div class="max-w-xl text-center sm:text-left">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
-              UMKM
-      
-              <strong class="block font-extrabold text-rose-700">
-                MERDEKA
-              </strong>
-            </h1>
-      
+            <div class="flex items-center">
+              <img src="images/logo/UMKM-Merdeka-Brands.png" class="w-40">
+              <h1 class="text-3xl sm:text-5xl">
+                UMKM
+
+                <strong class="block font-extrabold text-rose-700">
+                  MERDEKA
+                </strong>
+              </h1>
+            </div>
             <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
               tenetur fuga ducimus numquam ea!
@@ -34,7 +36,7 @@ class HeroSection extends HTMLElement {
                 href="#"
                 class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
               >
-                Join Us!
+                <button> Join Us</button>
               </a>
             </div>
           </div>
