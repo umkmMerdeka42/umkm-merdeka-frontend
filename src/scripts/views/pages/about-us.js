@@ -1,7 +1,9 @@
+import'../../components/about-us';
+
 const AboutUs = {
   async render() {
     return /* html */`
-      <h2>About Us</h2>
+      <about-us></about-us>
     `;
   },
 

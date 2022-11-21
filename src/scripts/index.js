@@ -4,6 +4,7 @@ import '../style/style.css';
 import './components/nav-bar';
 import './components/footer';
 import './components/hero-section';
+import './components/about-us';
 import App from './views/app';
 
 const app = new App({
