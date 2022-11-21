@@ -18,10 +18,10 @@ class HeroSection extends HTMLElement {
           <div class="max-w-xl text-center sm:text-left">
             <div class="flex items-center">
               <img src="images/logo/UMKM-Merdeka-Brands.png" class="w-40">
-              <h1 class="text-3xl sm:text-5xl">
+              <h1 class="text-3xl sm:text-5xl text-gray-900">
                 UMKM
 
-                <strong class="block font-extrabold text-rose-700">
+                <strong class="block font-extrabold text-blue-900">
                   MERDEKA
                 </strong>
               </h1>
@@ -34,7 +34,7 @@ class HeroSection extends HTMLElement {
             <div class="mt-8 flex flex-wrap gap-4 text-center">
               <a
                 href="#"
-                class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                class="block w-full rounded bg-primary transition duration-200 ease-in-out px-12 py-3 text-sm font-medium text-white shadow hover:bg-secondary focus:outline-none focus:ring active:bg-tertiary sm:w-auto"
               >
                 <button> Join Us</button>
               </a>
