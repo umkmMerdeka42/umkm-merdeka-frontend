@@ -42,12 +42,12 @@ class AboutUs extends HTMLElement {
           <div class="flex w-full mx-auto text-left">
             <div class="relative inline-flex items-center mx-auto align-middle">
               <div class="text-center">
-                <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-white md:text-3xl lg:text-4xl lg:max-w-7xl">
+                <h1 class="animate__animated animate__zoomIn max-w-5xl text-2xl font-bold leading-none tracking-tighter text-white md:text-3xl lg:text-4xl lg:max-w-7xl">
                   Tentang UMKM Merdeka<br class="hidden lg:block">
                 </h1>
-                <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-white">Telah dipercaya oleh puluhan mitra mahasiswa di tiga universitas di Indonesia. UMKM Merdeka senantiasa berkomitmen untuk membantu membuat bisnis Anda semakin berkembang. Bergabunglah dan temukan pengalaman mengesankan bersama kami.</p>
+                <p class="animate__animated animate__zoomIn max-w-xl mx-auto mt-8 text-base leading-relaxed text-white">Telah dipercaya oleh puluhan mitra mahasiswa di tiga universitas di Indonesia. UMKM Merdeka senantiasa berkomitmen untuk membantu membuat bisnis Anda semakin berkembang. Bergabunglah dan temukan pengalaman mengesankan bersama kami.</p>
                 <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
-                  <div class="mt-3 rounded-lg sm:mt-0">
+                  <div class="animate__animated animate__fadeInUp mt-3 rounded-lg sm:mt-0">
                     <button id="read-more" type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-red-500 lg:px-10 rounded-xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Lihat Selengkapnya</button>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ class AboutUs extends HTMLElement {
           <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap items-center justify-between">
               <div class="w-full px-4 lg:w-6/12">
-                <div class="-mx-3 flex items-center sm:-mx-4">
+                <div class="group-image-1 opacity-0 -mx-3 flex items-center sm:-mx-4">
                   <div class="w-full px-3 sm:px-4 xl:w-1/2">
                     <div class="py-3 sm:py-4">
                       <img
@@ -93,15 +93,15 @@ class AboutUs extends HTMLElement {
 
               <div class="w-full px-4 lg:w-5/12 xl:w-5/12">
                 <div class="mt-10 lg:mt-0">
-                  <h2 id="tentang-kami" tabindex="0" class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
+                  <h2 id="tentang-kami" tabindex="0" class="text-dark opacity-0 mb-8 text-3xl font-bold sm:text-4xl">
                   Tentang Kami
                   </h2>
-                  <p class="text-body-color mb-8 text-base text-gray-500">
+                  <p class="aboutParagraf text-body-color mb-8 text-base opacity-0 text-gray-500">
                   Berdiri sejak tahun 2022, UMKM Merdeka merupakan platform promosi barang maupun jasa berbasis website yang ditujukan 
                   untuk para mahasiswa. Kami selalu berusaha membuat inovasi baru sebagai usaha untuk menyelesaikan permasalahan sekitar 
                   dengan harapan dapat bermanfaat bagi banyak orang.
                   </p>
-                  <p class="text-body-color mb-12 text-base text-gray-500">
+                  <p class="aboutParagraf2 text-body-color mb-12 text-base opacity-0 text-gray-500">
                   Tujuan UMKM Merdeka adalah menyediakan wadah bagi para mahasiswa yang memiliki usaha untuk mempromosikan produknya secara cepat 
                   dan efisien sehingga dapat menjangkau lebih banyak konsumen.
                   </p>
@@ -114,7 +114,7 @@ class AboutUs extends HTMLElement {
         <section class="max-w-screen-2xl mx-auto">
           <div class="flex flex-wrap justify-between ">
             <div class="w-full lg:w-1/2 pr-16 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
-              <div>
+              <div class="visi opacity-0">
                 <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   Visi
                 </h2>
@@ -122,7 +122,7 @@ class AboutUs extends HTMLElement {
                   Para mahasiswa di Indonesia memiliki semangat wirausaha yang tinggi sebagai bekal di masa mendatang.
                 </p>
               </div>
-              <div>
+              <div class="misi opacity-0">
                 <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   Misi
                 </h2>
@@ -133,10 +133,10 @@ class AboutUs extends HTMLElement {
             </div>
       
             <div class="w-full lg:w-1/2 flex mb-12 md:mb-16">
-              <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
+              <div class="image1 opacity-0 bg-gray-100 rounded-2xl shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
                 <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center" />
               </div>
-              <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
+              <div class="image2 opacity-0 bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
                 <img src="https://i.pinimg.com/564x/72/ec/54/72ec541d92281f6acb3309d63602bb3d.jpg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center"/>
               </div>
             </div>
@@ -144,7 +144,7 @@ class AboutUs extends HTMLElement {
         </section>
 
         <section class="bg-purple-50 lg:mt-[100px] lg:mx-[-100px]">
-          <div class="px-4 py-32 mx-auto max-w-7xl">
+          <div class="quotes opacity-0 px-4 py-32 mx-auto max-w-7xl">
             <div class="grid items-center w-full grid-cols-1 gap-10 mx-auto lg:grid-cols-8 lg:gap-4 xl:w-3/4">
               <div class="w-40 h-40 col-span-1 lg:col-span-2">
                 <img src="https://cdn.fortuneidn.com/post/20220513/sandiaga-min-a04cca766a885687e33bc6b114230ee9-9a00de06227b2c4c5db2fe6bfdc3362e_1050x700.jpg" class="object-cover w-full h-full bg-center rounded-md shadow-xl" alt="Kutty" />

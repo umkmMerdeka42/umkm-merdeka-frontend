@@ -8,6 +8,7 @@ import './components/about-us';
 import './components/login-page';
 import './components/home';
 import 'tw-elements';
+import 'animate.css';
 import App from './views/app';
 
 const app = new App({
