@@ -6,8 +6,7 @@ const ProductList = {
   },
 
   async afterRender() {
-    const hero = document.querySelector('hero-section');
-    hero.style.display = 'none';
+    //
   },
 };
 

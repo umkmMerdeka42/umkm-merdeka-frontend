@@ -13,10 +13,10 @@ class FooterBar extends HTMLElement {
               role="list"
               class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
             >
-              <li role="listitem"><a href="#" class="hover:text-gray-600 transition-all">Home</a></li>
-              <li role="listitem"><a href="#" class="hover:text-gray-600 transition-all">Katalog</a></li>
-              <li role="listitem"><a href="#" class="hover:text-gray-600 transition-all">Whislist Anda</a></li>
-              <li role="listitem"><a href="#" class="hover:text-gray-600 transition-all">Tentang Kami</a></li>
+              <li role="listitem"><a href="#/home" class="hover:text-gray-600 transition-all">Home</a></li>
+              <li role="listitem"><a href="#/katalog" class="hover:text-gray-600 transition-all">Katalog</a></li>
+              <li role="listitem"><a href="#/whistlist" class="hover:text-gray-600 transition-all">Whislist Anda</a></li>
+              <li role="listitem"><a href="#/about-us" class="hover:text-gray-600 transition-all">Tentang Kami</a></li>
             </ul>
             <div class="m-auto flex w-max items-center justify-between space-x-4">
               <a href="#" aria-label="github" class="hover:text-gray-600 transition-all text-3xl">

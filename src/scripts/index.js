@@ -6,6 +6,7 @@ import './components/footer';
 import './components/hero-section';
 import './components/about-us';
 import './components/login-page';
+import './components/home';
 import 'tw-elements';
 import App from './views/app';
 
@@ -13,7 +14,6 @@ const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#drawer'),
   content: document.querySelector('#content'),
-  hero: document.querySelector('hero-section'),
   footer: document.querySelector('footer-bar'),
 });
 

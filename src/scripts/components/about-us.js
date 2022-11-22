@@ -1,11 +1,43 @@
+import DATA from '../../public/TEAM.json';
+
 class AboutUs extends HTMLElement {
   connectedCallback() {
     this.render();
   }
 
   render() {
+    const { teams } = DATA;
+
+    const cardTeamProfile = (data) => {
+      const {
+        name, photo, role, instagram, linkedin, github,
+      } = data;
+
+      return /* html */ `
+        <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
+          <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="${photo}" alt="${name}">
+          <h1 class="mt-4 text-xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">${name}</h1>
+          <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">${role}</p>
+
+          <div class="flex mt-3 -mx-2">
+            <a href="${instagram}" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
+              <i class="fa-brands fa-square-instagram text-3xl"></i>
+            </a>
+
+            <a href="${linkedin}" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin text-3xl"></i>
+            </a>
+
+            <a href="${github}" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Github">
+              <i class="fa-brands fa-square-github text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      `;
+    };
+
     this.innerHTML = /* html */ `
-      <section class="w-full bg-blue-600">
+      <section class="w-full bg-gradient-to-r from-secondary to-primary">
         <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
           <div class="flex w-full mx-auto text-left">
             <div class="relative inline-flex items-center mx-auto align-middle">
@@ -16,9 +48,7 @@ class AboutUs extends HTMLElement {
                 <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-white">Telah dipercaya oleh puluhan mitra mahasiswa di tiga universitas di Indonesia. UMKM Merdeka senantiasa berkomitmen untuk membantu membuat bisnis Anda semakin berkembang. Bergabunglah dan temukan pengalaman mengesankan bersama kami.</p>
                 <div class="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                   <div class="mt-3 rounded-lg sm:mt-0">
-                    <a href="" id="read-more">
-                      <button class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-red-500 lg:px-10 rounded-xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Lihat Selengkapnya</button>
-                    </a>
+                    <button id="read-more" type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="items-center block px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-red-500 lg:px-10 rounded-xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Lihat Selengkapnya</button>
                   </div>
                 </div>
               </div>
@@ -63,7 +93,7 @@ class AboutUs extends HTMLElement {
 
               <div class="w-full px-4 lg:w-5/12 xl:w-5/12">
                 <div class="mt-10 lg:mt-0">
-                  <h2 id="tentang-kami" class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
+                  <h2 id="tentang-kami" tabindex="0" class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
                   Tentang Kami
                   </h2>
                   <p class="text-body-color mb-8 text-base text-gray-500">
@@ -140,85 +170,7 @@ class AboutUs extends HTMLElement {
             </p>
       
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-              <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
-                <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="images/profile/aji.png" alt="M Aji Perdana">
-                <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">M Aji Perdana</h1>
-                <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">Full stack developer</p>
-
-                <div class="flex mt-3 -mx-2">
-                  <a href="https://instagram.com/tromolsupraa" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
-                    <i class="fa-brands fa-square-instagram text-3xl"></i>
-                  </a>
-
-                  <a href="https://linkedin.com/in/m-aji-perdana-3807071bb/" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin text-3xl"></i>
-                  </a>
-
-                  <a href="https://github.com/AjiPerdana38" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Github">
-                    <i class="fa-brands fa-square-github text-3xl"></i>
-                  </a>
-                </div>
-              </div>
-      
-              <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
-                <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="images/profile/aqsha.png" alt="">
-                <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">Aqsha</h1>
-                <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">Full stack developer</p>
-
-                <div class="flex mt-3 -mx-2">
-                  <a href="https://instagram.com/xaqsha" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
-                    <i class="fa-brands fa-square-instagram text-3xl"></i>
-                  </a>
-
-                  <a href="https://linkedin.com/in/aqshace" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin text-3xl"></i>
-                  </a>
-
-                  <a href="https://github.com/smourace" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Github">
-                    <i class="fa-brands fa-square-github text-3xl"></i>
-                  </a>
-                </div>
-              </div>
-      
-              <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
-                <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="images/profile/nafasya.png" alt="">
-                <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">Nafasya Rahma</h1>
-                <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">Full stack developer</p>
-
-                <div class="flex mt-3 -mx-2">
-                  <a href="https://instagram.com/nafasyarahma_" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
-                    <i class="fa-brands fa-square-instagram text-3xl"></i>
-                  </a>
-
-                  <a href="https://linkedin.com/in/nafasya-rahma-safitra" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin text-3xl"></i>
-                  </a>
-
-                  <a href="https://github.com/nafasyarahma" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Github">
-                    <i class="fa-brands fa-square-github text-3xl"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
-                <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="images/profile/ikhsan.jpg" alt="">
-                <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">M Al Ikhsan</h1>
-                <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">Full stack developer</p>
-
-                <div class="flex mt-3 -mx-2">
-                  <a href="https://instagram.com/khsnrgt" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Instagram">
-                    <i class="fa-brands fa-square-instagram text-3xl"></i>
-                  </a>
-
-                  <a href="https://linkedin.com/in/ikhsanrangkuti" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin text-3xl"></i>
-                  </a>
-
-                  <a href="https://github.com/ikhsanrangkuti" target="_blank" class="mx-2 text-gray-600 hover:text-gray-500 group-hover:text-white" aria-label="Github">
-                    <i class="fa-brands fa-square-github text-3xl"></i>
-                  </a>
-                </div>
-              </div>
+              ${teams.map((profileData) => cardTeamProfile(profileData)).join('')}
             </div>
           </div>
         </section>
@@ -246,7 +198,7 @@ class AboutUs extends HTMLElement {
                 <div>
                   <img class="h-20 mx-auto lg:h-28 sm:h-20" src="https://upload.wikimedia.org/wikipedia/id/f/ff/Logo_UnivLampung.png" alt="Universitas Lampung">
                   <a href="https://www.unila.ac.id/" target="_blank">
-                    <h3 class="pt-5 font-semibold text-xs text-gray-500 hover:text-gray-900 transition duration-200 ease-in-out lg:text-xl">Universitas Muhammadiyah Riau</h3>
+                    <h3 class="pt-5 font-semibold text-xs text-gray-500 hover:text-gray-900 transition duration-200 ease-in-out lg:text-xl">Universitas Lampung</h3>
                   </a>
                 </div>
               </div>

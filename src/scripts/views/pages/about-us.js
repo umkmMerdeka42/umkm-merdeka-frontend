@@ -1,5 +1,3 @@
-import '../../components/about-us';
-
 const AboutUs = {
   async render() {
     return /* html */`
@@ -8,9 +6,6 @@ const AboutUs = {
   },
 
   async afterRender() {
-    const hero = document.querySelector('hero-section');
-    hero.style.display = 'none';
-
     const readMore = document.querySelector('#read-more');
     readMore.addEventListener('click', (event) => {
       event.preventDefault();

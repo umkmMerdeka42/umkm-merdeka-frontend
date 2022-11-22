@@ -1,0 +1,36 @@
+{
+  "teams": [
+    {
+      "name": "M Aji Perdana",
+      "photo": "images/profile/aji.png",
+      "role": "Fullstack Developer",
+      "instagram": "https://instagram.com/tromolsupraa",
+      "linkedin": "https://linkedin.com/in/m-aji-perdana-3807071bb/",
+      "github": "https://github.com/AjiPerdana38"
+    },
+    {
+      "name": "Aqsha",
+      "photo": "images/profile/aqsha.png",
+      "role": "Fullstack Developer",
+      "instagram": "https://instagram.com/xaqsha",
+      "linkedin": "https://linkedin.com/in/aqshace",
+      "github": "https://github.com/smourace"
+    },
+    {
+      "name": "Nafasya Rahma",
+      "photo": "images/profile/nafasya.png",
+      "role": "Fullstack Developer",
+      "instagram": "https://instagram.com/nafasyarahma_",
+      "linkedin": "https://linkedin.com/in/nafasya-rahma-safitra",
+      "github": "https://github.com/nafasyarahma"
+    },
+    {
+      "name": "M Al Ikhsan",
+      "photo": "images/profile/ikhsan.jpg",
+      "role": "Fullstack Developer",
+      "instagram": "https://instagram.com/khsnrgt",
+      "linkedin": "https://linkedin.com/in/ikhsanrangkuti",
+      "github": "https://github.com/ikhsanrangkuti"
+    }
+  ]
+}
