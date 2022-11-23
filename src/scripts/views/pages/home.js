@@ -1,3 +1,6 @@
+import products from '../../data/data-dummy.json';
+import '../../components/card-home';
+
 const Home = {
   async render() {
     return /* html */`
@@ -6,6 +9,15 @@ const Home = {
   },
 
   async afterRender() {
+    const { product } = products;
+    const productListElement = document.querySelector('card-home');
+
+    const newProduct = (productList) => {
+      productListElement.products = productList;
+    };
+
+    newProduct(product);
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
 
