@@ -11,7 +11,7 @@ class NavigationBar extends HTMLElement {
             <div class="px-4">
               <a href="#/home" class="font-bold text-xl lg:text-3xl py-1 flex items-center">
                 <img src="images/logo/UMKM-Merdeka.png" alt="Logo UMKM Merdeka" class="w-10 lg:w-14 mr-2">
-                <span class="mt-1 text-gray-900">UMKM Merdeka</span>
+                <span class="mt-1 text-gray-900">UMKM MERDEKA</span>
               </a>
             </div>
             <div class="flex items-center px-4">

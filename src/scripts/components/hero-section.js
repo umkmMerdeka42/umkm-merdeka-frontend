@@ -11,7 +11,7 @@ class HeroSection extends HTMLElement {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
-          class="svg absolute hidden lg:block"
+          class="svg absolute hidden lg:block animate__animated animate__fadeIn"
           style="height: 560px; width: 100%; z-index: -10; overflow: hidden"
         >
           <defs>
@@ -29,16 +29,16 @@ class HeroSection extends HTMLElement {
         <div class="px-6 py-12 lg:my-12 md:px-12 text-gray-800 text-center lg:text-left">
           <div class="container mx-auto xl:px-32">
             <div class="flex justify-center items-center flex-col-reverse lg:flex-row">
-              <div class="md:w-[70%] lg:w-[50%]">
-                <h1 class="text-5xl md:text-6xl xl:text-7xl font-extrabold tracking-tight mb-3">UMKM MERDEKA</h1>
-                <h2 class="text-blue-600 text-3xl lg:text-4xl font-extrabold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
+              <div class="md:w-[70%] lg:w-[50%] animate__animated animate__fadeInLeft">
+                <h1 class="font-extrabold text-5xl md:text-6xl xl:text-7xl mb-3">UMKM MERDEKA</h1>
+                <h2 class="text-blue-600 text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
                 <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/login" role="button">Join Bareng Kami!</a>
                 <a class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/about-us" role="button">Tentang Kami</a>
               </div>
               <div class="my-3 lg:mt-5 lg:mr-0 lg:ml-16 flex justify-center">
                 <img
                   src="images/logo/UMKM-Merdeka-Brands.png"
-                  class="w-36 lg:w-96"
+                  class="w-36 lg:w-96 animate__animated animate__zoomIn"
                   alt="UMKM Merdeka"
                 />
               </div>

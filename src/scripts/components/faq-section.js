@@ -11,8 +11,7 @@ class FaqSection extends HTMLElement {
           <div class="grid lg:grid-cols-2 flex items-center">
             <div class="mb-12 lg:mb-0">
               <div
-                class="block rounded-lg shadow-lg px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14"
-                style="background: hsla(0, 0%, 100%, 0.55); backdrop-filter: blur(30px)"
+                class="block rounded-lg lg:shadow-lg bg-white/70 px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14 lg:backdrop-blur-xl"
               >
               <h3 class="text-2xl font-bold mb-3">Kenapa Sih Harus UMKM Merdeka ?</h3>
               <h5 class="text-lg text-blue-600 font-bold mb-12 lg:mb-10 xl:mb-12">Kamu Nanyeaa ?, Yuk Aku Kasih Tau...</h5>

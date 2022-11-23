@@ -10,6 +10,7 @@ import './components/home';
 import './components/list-section';
 import './components/detail-section';
 import './components/faq-section';
+import './components/card-home';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';
