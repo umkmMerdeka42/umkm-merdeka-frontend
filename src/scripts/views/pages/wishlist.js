@@ -1,7 +1,7 @@
-const Whistlist = {
+const Wishlist = {
   async render() {
     return /* html */`
-      <h2>Whistlist</h2>
+      <h2>Wishlist Anda</h2>
     `;
   },
 
@@ -10,4 +10,4 @@ const Whistlist = {
   },
 };
 
-export default Whistlist;
+export default Wishlist;

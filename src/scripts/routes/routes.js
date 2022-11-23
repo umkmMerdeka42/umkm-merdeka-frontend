@@ -1,7 +1,7 @@
 import Home from '../views/pages/home';
 import ProductList from '../views/pages/product-list';
 import ProductDetail from '../views/pages/product-detail';
-import Whistlist from '../views/pages/whistlist';
+import Wishlist from '../views/pages/wishlist';
 import AboutUs from '../views/pages/about-us';
 import Login from '../views/pages/login';
 
@@ -11,8 +11,8 @@ const routes = {
   '/katalog': ProductList,
   '/katalog/:id': ProductDetail,
   '/about-us': AboutUs,
-  '/whistlist': Whistlist,
-  '/login': Login
+  '/whistlist': Wishlist,
+  '/login': Login,
 };
 
 export default routes;
