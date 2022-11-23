@@ -7,8 +7,7 @@ class CardHome extends HTMLElement {
   render() {
     const item = this._product;
     const result = item.slice(Math.max(item.length - 3, 0));
-    const hasil = result.reverse();
-    console.log(hasil);
+    const resultDataReverse = result.reverse();
 
     const cardHome = (data) => /* html */ `
         <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 bg-opacity-50 shadow-2xl shadow-gray-600/10 hover:shadow-xl transition duration-200 ease-in-out">
@@ -17,16 +16,25 @@ class CardHome extends HTMLElement {
             alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
           </div>
           <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              ${data.productName}
+            <h3 class="text-2xl font-semibold block">
+              <a href="#/katalog/${data.id}" class="cursor-pointer text-gray-900 hover:text-gray-600">${data.productName}</a>
             </h3>
+            <p class="text-sm font-semibold my-5 text-gray-600 text-clip">
+              ${data.uploader} - ${data.university}
+            </p>
             <p class="mt-6 mb-8 text-gray-600">
               ${data.description.slice(0, 100)}...
             </p>
-            <a class="inline-block" href="#">
-              <span class="text-primary">Read more</span>
+            <a class="inline-block" href="#/katalog/${data.id}">
+              <button
+              type="button"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+              class="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-400 active:shadow-lg transition duration-150 ease-in-out"
+            >Selengkapnya</button>
             </a>
           </div>
+          
         </div>
       `;
 
@@ -40,8 +48,8 @@ class CardHome extends HTMLElement {
               aliquid explicabo? Excepturi, voluptate?
             </p>
           </div>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            ${hasil.map((data) => cardHome(data)).join('')}
+          <div class="grid gap-8 md:grid-cols-1 md:px-8 lg:px-0 lg:grid-cols-3">
+            ${resultDataReverse.map((data) => cardHome(data)).join('')}
           </div>
           <div class="flex mt-10 space-x-2 justify-center">
             <a href="#/katalog">
@@ -49,7 +57,7 @@ class CardHome extends HTMLElement {
               type="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              class="inline-block px-8 py-4 bg-blue-600 text-white font-medium text-md leading-tight rounded-full min-h-[44px] min-w-[44px] shadow-lg hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-600 active:shadow-lg transition duration-150 ease-in-out"
+              class="inline-block px-8 py-4 bg-blue-600 text-white font-medium text-md leading-tight rounded-full min-h-[44px] min-w-[44px] shadow-lg hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-400 active:shadow-lg transition duration-150 ease-in-out"
             >Lihat Lebih Banyak</button>
             </a>
           </div>
