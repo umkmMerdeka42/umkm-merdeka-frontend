@@ -29,7 +29,7 @@ class NavigationBar extends HTMLElement {
                     <a href="#/katalog" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Katalog</a>
                   </li>
                   <li>
-                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Whistlist Anda</a>
+                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Wishlist Anda</a>
                   </li>
                   <li>
                     <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Tentang Kami</a>

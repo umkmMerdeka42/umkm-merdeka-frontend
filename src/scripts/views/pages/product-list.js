@@ -1,7 +1,7 @@
 const ProductList = {
   async render() {
     return /* html */`
-      <h2>Product List</h2>
+      <list-section></list-section>
     `;
   },
 
