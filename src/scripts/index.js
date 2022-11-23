@@ -7,6 +7,7 @@ import './components/hero-section';
 import './components/about-us';
 import './components/login-page';
 import './components/home';
+import './components/faq-section';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';

@@ -6,6 +6,12 @@ const AboutUs = {
   },
 
   async afterRender() {
+    const navbar = document.querySelector('navigation-bar');
+    navbar.classList.remove('hidden');
+
+    const footerBar = document.querySelector('footer-bar');
+    footerBar.classList.remove('hidden');
+
     const readMore = document.querySelector('#read-more');
     readMore.addEventListener('click', (event) => {
       event.preventDefault();

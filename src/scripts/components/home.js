@@ -6,6 +6,7 @@ class HomePage extends HTMLElement {
   render() {
     this.innerHTML = /* html */`
       <hero-section></hero-section>
+      <faq-section></faq-section>
     `;
   }
 }

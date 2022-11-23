@@ -6,8 +6,11 @@ const Home = {
   },
 
   async afterRender() {
-    const hero = document.querySelector('hero-section');
-    hero.style.display = 'block';
+    const navbar = document.querySelector('navigation-bar');
+    navbar.classList.remove('hidden');
+
+    const footerBar = document.querySelector('footer-bar');
+    footerBar.classList.remove('hidden');
   },
 };
 

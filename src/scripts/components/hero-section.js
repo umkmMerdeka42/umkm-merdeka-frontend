@@ -39,7 +39,7 @@ class HeroSection extends HTMLElement {
                 <img
                   src="images/logo/UMKM-Merdeka-Brands.png"
                   class="w-36 lg:w-96"
-                  alt=""
+                  alt="UMKM Merdeka"
                 />
               </div>
             </div>

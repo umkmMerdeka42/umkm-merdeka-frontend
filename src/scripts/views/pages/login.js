@@ -7,10 +7,10 @@ const login = {
 
   async afterRender() {
     const navbar = document.querySelector('navigation-bar');
-    navbar.style.display = 'none';
+    navbar.classList.add('hidden');
 
     const footerBar = document.querySelector('footer-bar');
-    footerBar.style.display = 'none';
+    footerBar.classList.add('hidden');
   },
 };
 
