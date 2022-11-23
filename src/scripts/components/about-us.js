@@ -143,7 +143,7 @@ class AboutUs extends HTMLElement {
           </div>
         </section>
 
-        <section class="bg-purple-50 lg:mt-[100px] lg:mx-[-100px]">
+        <section class="bg-quotes opacity-0 bg-purple-50 lg:mt-[100px] lg:mx-[-100px]">
           <div class="quotes opacity-0 px-4 py-32 mx-auto max-w-7xl">
             <div class="grid items-center w-full grid-cols-1 gap-10 mx-auto lg:grid-cols-8 lg:gap-4 xl:w-3/4">
               <div class="w-40 h-40 col-span-1 lg:col-span-2">

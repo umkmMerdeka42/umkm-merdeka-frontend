@@ -5,33 +5,43 @@ class HeroSection extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-      <section
-        class="-mt-[60px] lg:-mt-[90px] bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat h-screen"
-      >
-        <div
-          class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"
-        ></div>
-      
-        <div
-          class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      <section class="-mt-[50px]">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+          class="svg absolute hidden lg:block"
+          style="height: 560px; width: 100%; z-index: -10; overflow: hidden"
         >
-          <div class="max-w-xl text-center sm:text-left">
-            <h1 class="text-3xl sm:text-5xl text-gray-900">
-              UMKM
+          <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+              <stop stop-color="hsl(236, 32%, 99%)" offset="0%"></stop>
+              <stop stop-color="hsl(217,88%, 93%)" offset="100%"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#sw-gradient-0)"
+            d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z"
+          ></path>
+        </svg>
 
-              <strong class="block font-extrabold text-blue-900">
-                MERDEKA
-              </strong>
-            </h1>
-            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-              tenetur fuga ducimus numquam ea!
-            </p>
-      
-            <div class="mt-6 flex flex-wrap gap-4 text-center">
-              <a href="#" class="w-full sm:w-auto">
-                <button data-mdb-ripple="true" data-mdb-ripple-color="light" class="w-full px-6 py-3 bg-blue-900 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-primary hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-tertiary active:shadow-lg transition duration-150 ease-in-out"> Join Us</button>
-              </a>
+        <div class="px-6 py-12 lg:my-12 md:px-12 text-gray-800 text-center lg:text-left">
+          <div class="container mx-auto xl:px-32">
+            <div class="flex justify-center items-center flex-col-reverse lg:flex-row">
+              <div class="md:w-[70%] lg:w-[50%]">
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-extrabold tracking-tight mb-3">UMKM MERDEKA</h1>
+                <h2 class="text-blue-600 text-3xl lg:text-4xl font-extrabold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
+                <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/login" role="button">Join Bareng Kami!</a>
+                <a class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/about-us" role="button">Tentang Kami</a>
+              </div>
+              <div class="my-3 lg:mt-5 lg:mr-0 lg:ml-16 flex justify-center">
+                <img
+                  src="images/logo/UMKM-Merdeka-Brands.png"
+                  class="w-36 lg:w-96"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -21,6 +21,7 @@ const AboutUs = {
       const misi = document.querySelector('.misi');
       const image1 = document.querySelector('.image1');
       const image2 = document.querySelector('.image2');
+      const bgQuotes = document.querySelector('.bg-quotes');
       const quotes = document.querySelector('.quotes');
 
       if (window.pageYOffset >= 370) {
@@ -52,6 +53,9 @@ const AboutUs = {
       }
 
       if (window.pageYOffset >= 1800) {
+        bgQuotes.classList.remove('opacity-0');
+        bgQuotes.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
         quotes.classList.remove('opacity-0');
         quotes.classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
       }
