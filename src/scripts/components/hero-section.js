@@ -32,7 +32,7 @@ class HeroSection extends HTMLElement {
               <div class="md:w-[70%] lg:w-[50%] animate__animated animate__fadeInLeft">
                 <h1 class="font-extrabold text-5xl md:text-6xl xl:text-7xl mb-3">UMKM MERDEKA</h1>
                 <h2 class="text-blue-600 text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
-                <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/login" role="button">Join Bareng Kami!</a>
+                <a class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/signup" role="button">Join Bareng Kami!</a>
                 <a class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#/about-us" role="button">Tentang Kami</a>
               </div>
               <div class="my-3 lg:mt-5 lg:mr-0 lg:ml-16 flex justify-center">

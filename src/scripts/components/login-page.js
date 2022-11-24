@@ -11,7 +11,7 @@ class Login extends HTMLElement {
         <div class="flex items-center w-full max-w-md p-8 px-6 mx-auto lg:w-2/6">
             <div class="flex-1">
                 <div class="flex flex-col justify-center items-center w-full text-center">
-                    <a href="#/"><img src="images/logo/Logo-main.jpg" class="w-32" alt="logo-umkm-merdeka"></a>
+                <a href="#/"><img src="images/logo/Logo-main.jpg" class="w-44" alt="logo-umkm-merdeka"></a>
                     
                     <p class="mt-3 text-gray-500 dark:text-gray-300 font-semibold">Sign in to access your account</p>
                 </div>
