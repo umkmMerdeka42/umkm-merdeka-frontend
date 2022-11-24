@@ -1,3 +1,5 @@
+import products from '../../data/data-dummy.json';
+
 const ProductList = {
   async render() {
     return /* html */`
@@ -6,6 +8,15 @@ const ProductList = {
   },
 
   async afterRender() {
+    const { product } = products;
+    const productListElement = document.querySelector('list-section');
+
+    const allProduct = (productList) => {
+      productListElement.products = productList;
+    };
+
+    allProduct(product);
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
 
