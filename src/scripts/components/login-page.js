@@ -6,12 +6,12 @@ class Login extends HTMLElement {
   render() {
     this.innerHTML = /* html */`
     <div class="bg-white dark:bg-gray-900">
-    <div class="flex justify-center min-h-screen">
+    <div class="flex justify-center">
         
-        <div class="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+        <div class="flex items-center w-full max-w-md p-8 px-6 mx-auto lg:w-2/6">
             <div class="flex-1">
                 <div class="flex flex-col justify-center items-center w-full text-center">
-                    <img src="images/logo/Logo-main.jpg" class="w-32" alt="">
+                    <img src="images/logo/Logo-main.jpg" class="w-32" alt="logo-umkm-merdeka">
                     
                     <p class="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
                 </div>
@@ -45,7 +45,7 @@ class Login extends HTMLElement {
 
                     </form>
 
-                    <p class="mt-6 text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#" class="text-secondary focus:text-primary hover:text-primary no-underline ">Sign up</a>.</p>
+                    <p class="mt-6 text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#/signup" class="text-secondary focus:text-primary hover:text-primary no-underline ">Sign up</a>.</p>
                 </div>
             </div>
         </div>

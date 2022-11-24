@@ -4,6 +4,7 @@ import ProductDetail from '../views/pages/product-detail';
 import Wishlist from '../views/pages/wishlist';
 import AboutUs from '../views/pages/about-us';
 import Login from '../views/pages/login';
+import SignUp from '../views/pages/signup';
 
 const routes = {
   '/': Home,
@@ -13,6 +14,7 @@ const routes = {
   '/about-us': AboutUs,
   '/whistlist': Wishlist,
   '/login': Login,
+  '/signup': SignUp,
 };
 
 export default routes;
