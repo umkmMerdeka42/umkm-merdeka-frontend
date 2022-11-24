@@ -12,7 +12,7 @@ class SignUp extends HTMLElement {
         <div class="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
             <div class="w-full">
             <div class="flex flex-col justify-center items-center w-full text-center">
-                    <img src="images/logo/Logo-main.jpg" class="w-32" alt="logo-umkm-merdeka">
+            <a href="#/"><img src="images/logo/Logo-main.jpg" class="w-32" alt="logo-umkm-merdeka"></a>
                 </div>
 
                 <p class="mt-4 text-gray-500 dark:text-gray-400 font-medium">
