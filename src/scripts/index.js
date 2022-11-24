@@ -7,6 +7,7 @@ import './components/hero-section';
 import './components/about-us';
 import './components/login-page';
 import './components/signup';
+import './components/forgot-pw';
 import './components/home';
 import './components/list-section';
 import './components/detail-section';

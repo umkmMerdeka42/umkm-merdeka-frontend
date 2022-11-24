@@ -5,6 +5,7 @@ import Wishlist from '../views/pages/wishlist';
 import AboutUs from '../views/pages/about-us';
 import Login from '../views/pages/login';
 import SignUp from '../views/pages/signup';
+import ForgotPw from '../views/pages/forgotpw-page';
 
 const routes = {
   '/': Home,
@@ -15,6 +16,7 @@ const routes = {
   '/whistlist': Wishlist,
   '/login': Login,
   '/signup': SignUp,
+  '/forgot': ForgotPw,
 };
 
 export default routes;
