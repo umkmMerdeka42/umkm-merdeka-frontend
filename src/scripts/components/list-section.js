@@ -59,10 +59,9 @@ class ListSection extends HTMLElement {
       </div>
     </div>
     `;
-
-    const selectedValue = document.getElementById('SortBy');
-    selectedValue.addEventListener('change', () => {
-      console.log(selectedValue.value);
+    const sorting = this.querySelector('#SortBy');
+    sorting.addEventListener('change', () => {
+      console.log(sorting.value);
     });
   }
 }
