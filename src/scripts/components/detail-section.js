@@ -20,9 +20,10 @@ class DetailSection extends HTMLElement {
                 <p class="leading-relaxed">${this._product.description}</p>
                 <div class="flex mt-6 items-center border-b-2 border-gray-100 mb-5">
                 </div>
-                <div class="flex">
+                <div class="flex items-center">
                 <span class="title-font font-medium text-2xl text-gray-900">Rp.${this._product.price}</span>
-                <button class="flex ml-auto text-white bg-green-500 border-0 py-2 px-7 focus:outline-none hover:bg-green-700 rounded text-2xl">
+                <span class="ml-auto mr-3 text-sm text-gray-900">Hubungi <br>${this._product.uploader}</span>
+                <button class="flex text-white bg-green-500 border-0 py-1 px-5 focus:outline-none hover:bg-green-700 rounded text-2xl">
                   <a href="https://wa.me/62${this._product.telephone.slice(1, 12)}" target="_blank" rel="noopener noreferrer" aria-label="send wa">
                     <i class="fa-brands fa-whatsapp"></i>
                   </a>
