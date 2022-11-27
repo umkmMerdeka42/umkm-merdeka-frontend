@@ -26,16 +26,13 @@ class ListSection extends HTMLElement {
     </div>
     `;
 
-    const asal = item.filter((data) => data.university === 'Universitas Muhammadiyah Riau');
-    console.log(asal);
-
     this.innerHTML = /* html */ `
     <div class="bg-white py-6 sm:py-8 lg:py-12">
       <div class="max-w-screen-2xl px-4 md:px-12 mx-auto">
       <!-- text - start -->
         <div class="">
-          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Selected</h2>
-          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Semua Produk</h2>
+          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan semua produk yang ada di UMKM Merdeka</p>
         
           <div class="py-5 text-right">
             <label for="SortBy" class="sr-only"> Sort </label>

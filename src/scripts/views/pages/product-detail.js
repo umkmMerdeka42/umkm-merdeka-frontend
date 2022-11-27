@@ -1,3 +1,6 @@
+import UrlParser from '../../routes/url-parser';
+import products from '../../data/data-dummy.json';
+
 const ProductDetail = {
   async render() {
     return /* html */`
@@ -6,6 +9,17 @@ const ProductDetail = {
   },
 
   async afterRender() {
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const { product } = products;
+    const { id } = url;
+    const detailElement = document.querySelector('detail-section');
+    const idDetail = product[id - 1];
+    const detailProduct = (productById) => {
+      detailElement.products = productById;
+    };
+
+    detailProduct(idDetail);
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
 
