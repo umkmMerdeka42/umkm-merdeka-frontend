@@ -6,6 +6,7 @@ import AboutUs from '../views/pages/about-us';
 import Login from '../views/pages/login';
 import SignUp from '../views/pages/signup';
 import ForgotPw from '../views/pages/forgotpw-page';
+import Dashboard from '../views/pages/dashboard';
 
 const routes = {
   '/': Home,
@@ -17,6 +18,7 @@ const routes = {
   '/login': Login,
   '/signup': SignUp,
   '/forgot': ForgotPw,
+  '/dashboard': Dashboard,
 };
 
 export default routes;

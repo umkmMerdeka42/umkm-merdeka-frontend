@@ -13,6 +13,7 @@ import './components/list-section';
 import './components/detail-section';
 import './components/faq-section';
 import './components/card-home';
+import './components/dashboard';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';
