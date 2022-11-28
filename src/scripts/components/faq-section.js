@@ -8,7 +8,7 @@ class FaqSection extends HTMLElement {
     <div class="container lg:my-10 px-6 mx-auto">
       <section class="mb-32 text-gray-800">
         <div class="container mx-auto xl:px-32 text-center lg:text-left">
-          <div class="lg:grid-cols-2 flex items-center">
+          <div class="grid lg:grid-cols-2 items-center">
             <div class="mb-12 lg:mb-0">
               <div
                 class="block rounded-lg lg:shadow-lg bg-white/70 px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14 lg:backdrop-blur-xl"
