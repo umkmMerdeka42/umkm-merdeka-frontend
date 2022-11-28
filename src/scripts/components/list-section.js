@@ -8,7 +8,7 @@ class ListSection extends HTMLElement {
     const item = this._product;
     const cardList = (data) => /* html */ `
     <div>
-      <a href="#" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
+      <a href="#/katalog/${data.id}" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
         <img src="${data.image}"
         loading="lazy" alt="Photo by Austin Wade" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
       </a>

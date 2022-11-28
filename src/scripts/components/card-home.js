@@ -44,8 +44,7 @@ class CardHome extends HTMLElement {
           <div class="mb-12 space-y-2 text-center">
             <h2 class="text-3xl font-bold text-gray-800 md:text-4xl">Produk Terbaru</h2>
             <p class="lg:mx-auto lg:w-6/12 text-gray-600">
-              Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
-              aliquid explicabo? Excepturi, voluptate?
+              Berikut Merupakan Produk-Produk Terbaru dari UMKM Merdeka
             </p>
           </div>
           <div class="grid gap-8 md:grid-cols-1 md:px-8 lg:px-0 lg:grid-cols-3">
