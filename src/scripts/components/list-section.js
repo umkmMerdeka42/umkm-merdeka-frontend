@@ -27,38 +27,44 @@ class ListSection extends HTMLElement {
     `;
 
     this.innerHTML = /* html */ `
-    <div class="bg-white py-6 sm:py-8 lg:py-12">
-      <div class="max-w-screen-2xl px-4 md:px-12 mx-auto">
-      <!-- text - start -->
-        <div class="">
-          <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Semua Produk</h2>
-          <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan semua produk yang ada di UMKM Merdeka</p>
-        
-          <div class="py-5 text-right">
-            <label for="SortBy" class="sr-only"> Sort </label>
-  
-            <select
-              id="SortBy"
-              name="sort_by"
-              class="rounded-md border text-sm py-3 px-2"
-              >
-              <option readonly>- Pilih Universitas -</option>
-              <option>Universitas Bandar Lampung</option>
-              <option>Universitas Lampung</option>
-              <option>Universitas Muhammadiyah Riau</option>
-            </select>
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-12 mx-auto">
+        <!-- text - start -->
+          <div class="">
+            <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Semua Produk</h2>
+            <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan semua produk yang ada di UMKM Merdeka</p>
+          
+            <div class="py-5 text-right">
+              <label for="SortBy" class="sr-only"> Sort </label>
+    
+              <select
+                id="SortBy"
+                name="sort_by"
+                class="rounded-md border text-sm py-3 px-2"
+                >
+                <option readonly>Semua Produk</option>
+                <option>Universitas Bandar Lampung</option>
+                <option>Universitas Lampung</option>
+                <option>Universitas Muhammadiyah Riau</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="carding grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            ${item.map((data) => cardList(data)).join('')}
           </div>
         </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-          ${item.map((data) => cardList(data)).join('')}
-        </div>
       </div>
-    </div>
     `;
     const sorting = this.querySelector('#SortBy');
     sorting.addEventListener('change', () => {
-      console.log(sorting.value);
+      const filteredUniv = item.filter((data) => data.university === sorting.value);
+      const card = document.querySelector('.carding');
+      card.innerHTML = filteredUniv.map((data) => cardList(data)).join('');
+
+      if (sorting.value === 'Semua Produk') {
+        card.innerHTML = item.map((data) => cardList(data)).join('');
+      }
     });
   }
 }

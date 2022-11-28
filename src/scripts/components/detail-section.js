@@ -5,7 +5,6 @@ class DetailSection extends HTMLElement {
   }
 
   render() {
-    console.log(this._product);
     this.innerHTML = /* html */ `
     <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-5 py-10 mx-auto">
@@ -15,7 +14,7 @@ class DetailSection extends HTMLElement {
                 <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">${this._product.productName}</h1>
                 <h2 class="text-sm title-font text-gray-500 tracking-widest">${this._product.university}</h2>
                 <div class="flex mb-4">
-                    <span class="text-gray-600">${this._product.uploader}</span>
+                  <span class="text-gray-600">${this._product.uploader}</span>
                 </div>
                 <p class="leading-relaxed">${this._product.description}</p>
                 <div class="flex mt-6 items-center border-b-2 border-gray-100 mb-5">
