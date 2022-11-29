@@ -5,8 +5,8 @@ class TableallProduct extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-      <div class="mx-auto px-4 pt-[100px] rounded-xl">
-      <table class="min-w-full divide-y bg-white text-sm shadow-md rounded-xl">
+      <div class="overflow-hidden overflow-x-auto pt-[110px] px-5 pb-10">
+      <table class="min-w-full divide-y bg-white text-sm rounded-xl shadow-md">
         <thead class="">
           <tr>
             <th class="sticky inset-y-0 left-0 px-4 py-2 text-left">
