@@ -5,35 +5,35 @@ class ForgotPw extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-    <div class="bg-white dark:bg-gray-900">
+    <div class="bg-white">
       <div class="flex justify-center">
         
         <div class="flex items-center w-full max-w-md p-8 px-6 mx-auto lg:w-2/6">
           <div class="flex-1">
             <div class="flex flex-col justify-center items-center w-full text-center">
               <a href="#/"><img src="images/logo/Logo-main.jpg" class="w-44" alt="logo-umkm-merdeka"></a>
-              <p class="mt-3 text-gray-500 dark:text-gray-300 font-semibold">Reset Your Password</p>
+              <p class="mt-3 text-gray-500 font-semibold">Reset Your Password</p>
             </div>
 
             <div class="mt-8">
               <form>
                 <div>
-                  <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
-                  <input type="email" name="email" id="email" placeholder="example@example.com" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label for="email" class="block mb-2 text-sm text-gray-600">Email Address</label>
+                  <input type="email" name="email" id="email" placeholder="example@example.com" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div class="mt-6">
                   <div class="flex justify-between mb-2">
-                    <label for="password" class="text-sm text-gray-600 dark:text-gray-200">New Password</label>
+                    <label for="password" class="text-sm text-gray-600">New Password</label>
                   </div>
-                  <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div class="mt-6">
                   <div class="flex justify-between mb-2">
-                    <label for="password" class="text-sm text-gray-600 dark:text-gray-200">Confirm Password</label>
+                    <label for="password" class="text-sm text-gray-600">Confirm Password</label>
                   </div>
-                  <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <input type="password" name="password" id="password" placeholder="Your Password" class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div class="mt-6">
