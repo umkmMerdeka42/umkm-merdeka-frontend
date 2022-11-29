@@ -27,7 +27,7 @@ class Dashboard extends HTMLElement {
             </a>
           </li>
           <li class="relative list-none h-[50px]">
-            <a href="#" class="h-full w-full flex items-center no-underline 
+            <a href="#/users" class="h-full w-full flex items-center no-underline 
               hover:bg-[#081d45] focus:bg-[#081d45]">
             <i class="min-w-[60px] text-center text-[15px] text-white fa-solid fa-list"></i>
             <span class="text-white text-[15px] font-normal whitespace-nowrap links_name">Users</span>

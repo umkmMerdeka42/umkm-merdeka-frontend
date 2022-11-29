@@ -16,6 +16,7 @@ import './components/card-home';
 import './components/dashboard';
 import './components/cardProduct';
 import './components/tableAllProduct';
+import './components/usersDashboard';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';

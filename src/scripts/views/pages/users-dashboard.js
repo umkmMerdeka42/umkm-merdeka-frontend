@@ -1,10 +1,10 @@
 /* eslint-disable func-names */
-const productDashboard = {
+const usersDashboard = {
   async render() {
     const innerDashboard = document.querySelector('.innerDashboard');
     innerDashboard.innerHTML = /* html */ `
-      <tableall-Product></tableall-Product>
-    `;
+        <users-dashboard></users-dashboard>
+      `;
   },
 
   async afterRender() {
@@ -33,4 +33,4 @@ const productDashboard = {
   },
 };
 
-export default productDashboard;
+export default usersDashboard;
