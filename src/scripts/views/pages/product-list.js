@@ -1,4 +1,5 @@
 import products from '../../data/data-dummy.json';
+import UmkmMerdekaSource from '../../data/umkm-data-source';
 
 const ProductList = {
   async render() {
@@ -10,6 +11,9 @@ const ProductList = {
   async afterRender() {
     const { product } = products;
     const productListElement = document.querySelector('list-section');
+
+    const productsForGuest = UmkmMerdekaSource.getAllProductsForGuest();
+    console.log(productsForGuest);
 
     const allProduct = (productList) => {
       productListElement.products = productList;
