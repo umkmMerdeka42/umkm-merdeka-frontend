@@ -14,6 +14,7 @@ import './components/detail-section';
 import './components/faq-section';
 import './components/card-home';
 import './components/dashboard';
+import './components/wishlist-page';
 import './components/cardProduct';
 import './components/tableAllProduct';
 import './components/usersDashboard';

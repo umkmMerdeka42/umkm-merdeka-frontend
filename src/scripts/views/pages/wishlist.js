@@ -1,7 +1,7 @@
 const Wishlist = {
   async render() {
-    return /* html */`
-      <h2>Wishlist Anda</h2>
+    return /* html */ `
+      <product-wishlist></product-wishlist>
     `;
   },
 
