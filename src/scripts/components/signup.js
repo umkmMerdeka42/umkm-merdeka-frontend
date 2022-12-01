@@ -13,39 +13,39 @@ class SignUp extends HTMLElement {
                 <a href="#/"><img src="images/logo/UMKM-Merdeka-Brands.png" class="w-44" alt="logo-umkm-merdeka"></a>
               </div>
 
-              <h1 class="mt-4 text-gray-500 dark:text-gray-400 font-semibold text-center">
+              <h1 class="mt-4 text-gray-500 font-semibold text-center">
                 Let’s get you all set up so you can verify your personal account and begin setting up your profile.
               </h1>
 
               <form class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">First Name</label>
-                  <input type="text" placeholder="John" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">First Name</label>
+                  <input type="text" placeholder="John" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Last name</label>
-                  <input type="text" placeholder="Snow" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">Last name</label>
+                  <input type="text" placeholder="Snow" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">NIM</label>
-                  <input type="text" placeholder="200401008" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">NIM</label>
+                  <input type="text" placeholder="200401008" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                  <input type="email" placeholder="johnsnow@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">Email address</label>
+                  <input type="email" placeholder="johnsnow@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Password</label>
-                  <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">Password</label>
+                  <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <div>
-                  <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Confirm password</label>
-                  <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                  <label class="block mb-2 text-sm text-gray-600">Confirm password</label>
+                  <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                 </div>
 
                 <button

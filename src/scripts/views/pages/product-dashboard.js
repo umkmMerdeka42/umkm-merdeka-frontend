@@ -1,8 +1,9 @@
-const Dashboard = {
+/* eslint-disable func-names */
+const productDashboard = {
   async render() {
     const innerDashboard = document.querySelector('.innerDashboard');
     innerDashboard.innerHTML = /* html */ `
-      <card-product class="w-full"></card-product>
+      <tableall-Product></tableall-Product>
     `;
   },
 
@@ -32,4 +33,4 @@ const Dashboard = {
   },
 };
 
-export default Dashboard;
+export default productDashboard;
