@@ -1,4 +1,3 @@
-import products from '../../data/data-dummy.json';
 import UmkmMerdekaSource from '../../data/umkm-data-source';
 
 const ProductList = {
@@ -9,17 +8,15 @@ const ProductList = {
   },
 
   async afterRender() {
-    const { product } = products;
     const productListElement = document.querySelector('list-section');
-
-    const productsForGuest = UmkmMerdekaSource.getAllProductsForGuest();
-    console.log(productsForGuest);
 
     const allProduct = (productList) => {
       productListElement.products = productList;
     };
 
-    allProduct(product);
+    UmkmMerdekaSource.getAllProductsForGuest().then((data) => {
+      allProduct(data);
+    });
 
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');

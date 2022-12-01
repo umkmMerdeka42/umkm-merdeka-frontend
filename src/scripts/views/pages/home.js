@@ -1,4 +1,4 @@
-import products from '../../data/data-dummy.json';
+import UmkmMerdekaSource from '../../data/umkm-data-source';
 import '../../components/card-home';
 
 const Home = {
@@ -9,14 +9,15 @@ const Home = {
   },
 
   async afterRender() {
-    const { product } = products;
     const productListElement = document.querySelector('card-home');
 
     const newProduct = (productList) => {
       productListElement.products = productList;
     };
 
-    newProduct(product);
+    UmkmMerdekaSource.getAllProductsForGuest().then((data) => {
+      newProduct(data);
+    });
 
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');

@@ -21,7 +21,10 @@ import './components/usersDashboard';
 import './components/search-bar';
 import 'tw-elements';
 import 'animate.css';
+import axios from 'axios';
 import App from './views/app';
+
+axios.defaults.withCredentials = true;
 
 const app = new App({
   button: document.querySelector('#hamburger'),

@@ -1,5 +1,6 @@
 import UrlParser from '../../routes/url-parser';
-import products from '../../data/data-dummy.json';
+// import products from '../../data/data-dummy.json';
+import UmkmMerdekaSource from '../../data/umkm-data-source';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 import { createLikeButtonTemplate } from '../templates/template-creators';
 
@@ -12,19 +13,23 @@ const ProductDetail = {
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const { product } = products;
     const { id } = url;
+
     const detailElement = document.querySelector('detail-section');
-    const idDetail = product[id - 1];
     const detailProduct = (productById) => {
       detailElement.products = productById;
     };
 
-    detailProduct(idDetail);
+    UmkmMerdekaSource.getDetailAllProductsForGuest(id).then((product) => {
+      detailProduct(product.data);
 
-    LikeButtonInitiator.init({
-      likeButtonContainer: document.querySelector('#likeButtonContainer'),
-      product,
+      LikeButtonInitiator.init({
+        likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        product,
+      });
+
+      const likeButtonContainer = document.querySelector('#likeButtonContainer');
+      likeButtonContainer.innerHTML = createLikeButtonTemplate();
     });
 
     const navbar = document.querySelector('navigation-bar');
@@ -35,9 +40,6 @@ const ProductDetail = {
 
     const footerBar = document.querySelector('footer-bar');
     footerBar.classList.remove('hidden');
-
-    const likeButtonContainer = document.querySelector('#likeButtonContainer');
-    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 

@@ -9,15 +9,15 @@ class ListSection extends HTMLElement {
     const item = this._product;
     const cardList = (data) => /* html */ `
     <div>
-      <a href="#/katalog/${data.id}" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
-        <img src="${data.image}"
+      <a href="#/katalog/${data.uuid}" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
+        <img src="${data.url}"
         loading="lazy" alt="Photo by Austin Wade" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
       </a>
 
       <div class="flex justify-between items-start bg-gray-100 rounded-b-lg gap-2 p-4">
         <div class="flex flex-col">
-          <a href="#/katalog/${data.id}" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}</a>
-          <span class="text-gray-500 text-sm lg:text-base">${data.uploader} - ${data.university}</span>
+          <a href="#/katalog/${data.uuid}" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}</a>
+          <span class="text-gray-500 text-sm lg:text-base">${data.user.name} - ${data.user.university}</span>
         </div>
 
         <div class="flex flex-col items-end">
@@ -61,7 +61,7 @@ class ListSection extends HTMLElement {
     `;
     const sorting = this.querySelector('#SortBy');
     sorting.addEventListener('change', () => {
-      const filteredUniv = item.filter((data) => data.university === sorting.value);
+      const filteredUniv = item.filter((data) => data.user.university === sorting.value);
       const card = document.querySelector('.carding');
       card.innerHTML = filteredUniv.map((data) => cardList(data)).join('');
 
@@ -74,6 +74,19 @@ class ListSection extends HTMLElement {
       const keyword = this.querySelector('#searchElement').value;
       const searchedProduct = item.filter((data) => data.productName.toUpperCase().includes(keyword.toUpperCase()));
       const card = document.querySelector('.carding');
+      card.innerHTML = searchedProduct.map((data) => cardList(data)).join('');
+    });
+
+    const searchingForm = this.querySelector('#searchElement');
+    searchingForm.addEventListener('keyup', () => {
+      const keyword = this.querySelector('#searchElement').value;
+      const card = document.querySelector('.carding');
+
+      if (!keyword.length) {
+        card.innerHTML = item.map((data) => cardList(data)).join('');
+      }
+
+      const searchedProduct = item.filter((data) => data.productName.toUpperCase().includes(keyword.toUpperCase()));
       card.innerHTML = searchedProduct.map((data) => cardList(data)).join('');
     });
   }
