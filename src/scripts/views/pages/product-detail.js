@@ -1,5 +1,7 @@
 import UrlParser from '../../routes/url-parser';
 import products from '../../data/data-dummy.json';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
+import { createLikeButtonTemplate } from '../templates/template-creators';
 
 const ProductDetail = {
   async render() {
@@ -20,11 +22,19 @@ const ProductDetail = {
 
     detailProduct(idDetail);
 
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      product,
+    });
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
 
     const footerBar = document.querySelector('footer-bar');
     footerBar.classList.remove('hidden');
+
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.innerHTML = createLikeButtonTemplate();
   },
 };
 

@@ -2,7 +2,7 @@ import products from '../../data/data-dummy.json';
 
 const ProductList = {
   async render() {
-    return /* html */`
+    return /* html */ `
       <list-section></list-section>
     `;
   },
