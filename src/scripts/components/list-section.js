@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 class ListSection extends HTMLElement {
   set products(product) {
     this._product = product;
@@ -34,15 +35,8 @@ class ListSection extends HTMLElement {
             <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Semua Produk</h2>
             <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan semua produk yang ada di UMKM Merdeka</p>
             <div class="py-5 flex justify-between">
-            <!-- searching -->
-              <div class="form-control">
-                <div class="input-group rounded-md border py-3 px-4">
-                  <input type="text" placeholder="Search…" class="input input-bordered" />
-                  <button class="btn btn-square align-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
-                </div>
-              </div>
+              <!-- searching -->
+              <search-bar></search-bar>
               <!-- sorting -->
               <label for="SortBy" class="sr-only"> Sort </label>
     
@@ -74,6 +68,13 @@ class ListSection extends HTMLElement {
       if (sorting.value === 'Semua Produk') {
         card.innerHTML = item.map((data) => cardList(data)).join('');
       }
+    });
+    const searching = this.querySelector('#searchButtonElement');
+    searching.addEventListener('click', () => {
+      const keyword = this.querySelector('#searchElement').value;
+      const searchedProduct = item.filter((data) => data.productName.toUpperCase().includes(keyword.toUpperCase()));
+      const card = document.querySelector('.carding');
+      card.innerHTML = searchedProduct.map((data) => cardList(data)).join('');
     });
   }
 }

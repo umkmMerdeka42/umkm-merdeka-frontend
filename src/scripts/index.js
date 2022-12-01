@@ -17,6 +17,7 @@ import './components/dashboard';
 import './components/cardProduct';
 import './components/tableAllProduct';
 import './components/usersDashboard';
+import './components/search-bar';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';
