@@ -21,10 +21,8 @@ import './components/usersDashboard';
 import './components/search-bar';
 import 'tw-elements';
 import 'animate.css';
-import axios from 'axios';
 import App from './views/app';
-
-axios.defaults.withCredentials = true;
+import swRegister from './utils/sw-register';
 
 const app = new App({
   button: document.querySelector('#hamburger'),
@@ -39,4 +37,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });

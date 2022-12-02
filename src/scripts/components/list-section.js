@@ -43,7 +43,7 @@ class ListSection extends HTMLElement {
               <select
                 id="SortBy"
                 name="sort_by"
-                class="rounded-md border text-sm py-3 px-2"
+                class="rounded-md border text-sm w-32 md:w-60"
                 >
                 <option readonly>Semua Produk</option>
                 <option>Universitas Bandar Lampung</option>
