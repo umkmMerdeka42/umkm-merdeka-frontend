@@ -13,7 +13,7 @@ const ProductWishlistIdb = {
   async getProduct(id) {
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
-  async getAllProduct() {
+  async getAllProducts() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putProduct(product) {

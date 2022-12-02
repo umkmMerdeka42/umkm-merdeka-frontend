@@ -2,7 +2,6 @@ import UrlParser from '../../routes/url-parser';
 // import products from '../../data/data-dummy.json';
 import UmkmMerdekaSource from '../../data/umkm-data-source';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
-import { createLikeButtonTemplate } from '../templates/template-creators';
 
 const ProductDetail = {
   async render() {
@@ -27,9 +26,6 @@ const ProductDetail = {
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
         product,
       });
-
-      const likeButtonContainer = document.querySelector('#likeButtonContainer');
-      likeButtonContainer.innerHTML = createLikeButtonTemplate();
     });
 
     const navbar = document.querySelector('navigation-bar');
