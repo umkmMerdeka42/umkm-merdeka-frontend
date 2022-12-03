@@ -1,11 +1,24 @@
+import ProductWishlistIdb from '../../data/product-wishlist-idb';
+import '../../components/list-section';
+
 const Wishlist = {
   async render() {
     return /* html */ `
-      <product-wishlist></product-wishlist>
+      <list-section></list-section>
     `;
   },
 
   async afterRender() {
+    const productListElement = document.querySelector('list-section');
+
+    const allProduct = (productList) => {
+      productListElement.products = productList;
+    };
+
+    ProductWishlistIdb.getAllProducts().then((data) => {
+      allProduct(data);
+    });
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
 
