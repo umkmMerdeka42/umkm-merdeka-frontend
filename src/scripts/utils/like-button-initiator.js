@@ -4,32 +4,32 @@ import { createLikeButtonTemplate, createLikedButtonTemplate } from '../views/te
 const LikeButtonInitiator = {
   async init({ likeButtonContainer, product }) {
     this._likeButtonContainer = likeButtonContainer;
-    this._product = product;
+    this._product = product.data;
 
     await this._renderButton();
   },
 
   async _renderButton() {
-    // const { id } = this._product;
+    const { uuid } = this._product;
 
-    // if (await this._isProductExist(id)) {
-    //   this._renderLiked();
-    // } else {
-    //   this._renderLike();
-    // }
+    if (await this._isProductExist(uuid)) {
+      this._renderLiked();
+    } else {
+      this._renderLike();
+    }
   },
 
-  // async _isProductExist(id) {
-  //   const product = await ProductWishlistIdb.getProduct(id);
-  //   return !!product;
-  // },
+  async _isProductExist(id) {
+    const product = await ProductWishlistIdb.getProduct(id);
+    return !!product;
+  },
 
   _renderLike() {
     this._likeButtonContainer.innerHTML = createLikeButtonTemplate();
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await ProductWishlistIdb.putProduct(this._product.id);
+      await ProductWishlistIdb.putProduct(this._product);
       this._renderButton();
     });
   },
@@ -39,7 +39,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await ProductWishlistIdb.deleteProduct(this._product.id);
+      await ProductWishlistIdb.deleteProduct(this._product);
       this._renderButton();
     });
   },
