@@ -8,13 +8,13 @@ class ListSection extends HTMLElement {
   render() {
     const item = this._product;
     const cardList = (data) => /* html */ `
-    <div>
-      <a href="#/katalog/${data.uuid}" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
+    <div class="bg-gray-100 rounded-b-lg shadow-gray-600/10 hover:shadow-xl transition duration-200 ease-in-out">
+      <a href="#/katalog/${data.uuid}" class="group h-96 block rounded-t-lg overflow-hidden relative">
         <img src="${data.url}"
         loading="lazy" alt="Photo by Austin Wade" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
       </a>
 
-      <div class="flex justify-between items-start bg-gray-100 rounded-b-lg gap-2 p-4">
+      <div class="flex justify-between items-start gap-2 p-6">
         <div class="flex flex-col">
           <a href="#/katalog/${data.uuid}" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}</a>
           <span class="text-gray-500 text-sm lg:text-base">${data.user.name} - ${data.user.university}</span>
