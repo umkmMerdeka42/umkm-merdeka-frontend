@@ -39,7 +39,7 @@ const LikeButtonInitiator = {
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
-      await ProductWishlistIdb.deleteProduct(this._product);
+      await ProductWishlistIdb.deleteProduct(this._product.uuid);
       this._renderButton();
     });
   },
