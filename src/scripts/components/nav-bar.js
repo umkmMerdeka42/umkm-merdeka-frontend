@@ -36,7 +36,7 @@ class NavigationBar extends HTMLElement {
                   </li>
                   <li>
                     <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 lg:ml-2">
-                      <a href="#/login"><button
+                      <a href="#"><button
                       type="button"
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
