@@ -1,29 +1,53 @@
 class ProductWishlist extends HTMLElement {
-  connectedCallback() {
+  set products(product) {
+    this._product = product;
     this.render();
   }
 
   render() {
+    const item = this._product;
+    const cardList = (data) => /* html */ `
+    <div class="flex flex-col bg-gray-100 rounded-b-lg shadow-gray-600/10 hover:shadow-xl transition duration-200 ease-in-out">
+      <a href="#/katalog/${data.uuid}" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
+        <img src="${data.url}"
+        loading="lazy" alt="Produk" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+      </a>
+
+      
+        <div class="flex justify-between items-start rounded-b-lg gap-2 p-4">
+          <div class="flex flex-col">
+            <a href="#/katalog/${data.uuid}" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}</a>
+            <span class="text-gray-500 text-sm lg:text-base">${data.user.name}</span>
+          </div>
+
+          <div class="flex flex-col items-end">
+            <span class="text-gray-600 lg:text-lg font-bold">Rp.${data.price}</span>
+          </div>
+        </div>
+
+        <div class="flex self-end mt-auto p-4">
+          <button class="flex items-center px-4 py-4 bg-gray-200 hover:bg-red-500 hover:text-white text-gray-600 text-md font-medium rounded-lg text-md text-center mr-4" aria-label="delete wishlist">
+            <i class="fa-solid fa-trash"></i> 
+          </button>
+          <a href="https://wa.me/62${data.user.telephone.slice(1, 12)}" target="_blank" rel="noopener noreferrer" aria-label="send wa" target="_blank" rel="noopener noreferrer" aria-label="send wa"
+            class="text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-md px-5 py-3 text-center">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="ml-2">Hubungi Penjual</span> 
+          </a>
+        </div>
+     
+    </div>
+    `;
+
     this.innerHTML = /* html */ `
     <div class="bg-white py-6 sm:py-8 md:px-12 lg:py-12 px-4">
         <div class="container  items-center justify-between mx-auto">
           <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Wishlist Produk</h2>
           <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan wishlist produk yang ada di UMKM Merdeka</p>
-        
-          <div class="flex justify-end md:order-2 py-5">
-            <button type="button" data-collapse-toggle="wishlist-search" aria-controls="wishlist-search" aria-expanded="false" class="md:hidden text-gray-500 hover:bg-gray-100focus:outline-none focus:ring-4 focus:ring-gray-200  rounded-lg text-sm p-2.5 mr-1" >
-              <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-              <span class="sr-only">Search</span>
-            </button>
+        </div>
 
-            <div class="relative hidden md:block">
-              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
-                <span class="sr-only">Search icon</span>
-              </div>
-              <input type="text" id="search-wishlist" class="block w-full p-2 pl-10 text-sm rounded-md py-3 px-2 text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search Wishlist..." >
-            </div>
-          </div>
+        <div class="carding grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 py-6 sm:py-8 lg:py-12">
+          ${item.map((data) => cardList(data)).join('')}
         </div>
     </div>
     `;

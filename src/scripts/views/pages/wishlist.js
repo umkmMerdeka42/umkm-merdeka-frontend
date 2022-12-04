@@ -1,15 +1,15 @@
 import ProductWishlistIdb from '../../data/product-wishlist-idb';
-import '../../components/list-section';
+import '../../components/wishlist-page';
 
 const Wishlist = {
   async render() {
     return /* html */ `
-      <list-section></list-section>
+      <product-wishlist></product-wishlist>
     `;
   },
 
   async afterRender() {
-    const productListElement = document.querySelector('list-section');
+    const productListElement = document.querySelector('product-wishlist');
 
     const allProduct = (productList) => {
       productListElement.products = productList;
