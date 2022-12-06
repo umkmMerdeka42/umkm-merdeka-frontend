@@ -26,9 +26,6 @@ class ProductWishlist extends HTMLElement {
         </div>
 
         <div class="flex self-end mt-auto p-4">
-          <button class="flex items-center px-4 py-4 bg-gray-200 hover:bg-red-500 hover:text-white text-gray-600 text-md font-medium rounded-lg text-md text-center mr-4" aria-label="delete wishlist">
-            <i class="fa-solid fa-trash"></i> 
-          </button>
           <a href="https://wa.me/62${data.user.telephone.slice(1, 12)}" target="_blank" rel="noopener noreferrer" aria-label="send wa" target="_blank" rel="noopener noreferrer" aria-label="send wa"
             class="text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-md px-5 py-3 text-center">
             <i class="fa-brands fa-whatsapp"></i>

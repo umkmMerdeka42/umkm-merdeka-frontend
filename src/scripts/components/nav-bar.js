@@ -35,13 +35,16 @@ class NavigationBar extends HTMLElement {
                     <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Tentang Kami</a>
                   </li>
                   <li>
-                    <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 lg:ml-2">
-                      <a href="#"><button
-                      type="button"
-                      data-mdb-ripple="true"
-                      data-mdb-ripple-color="light"
-                      class="rounded-sm inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                    >Login</button></a>
+                    <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 ml-5 lg:ml-1 lg:mr-2">
+                      <a href="#">
+                        <button
+                          type="button"
+                          data-mdb-ripple="true"
+                          data-mdb-ripple-color="light"
+                          class="rounded-sm inline-block px-2 lg:px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        >Jualan Sekarang!
+                        </button>
+                    </a>
                     </div>
                   </li>
                 </ul>

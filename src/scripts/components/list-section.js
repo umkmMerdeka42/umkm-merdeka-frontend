@@ -8,20 +8,35 @@ class ListSection extends HTMLElement {
   render() {
     const item = this._product;
     const cardList = (data) => /* html */ `
-    <div class="bg-gray-100 rounded-b-lg shadow-gray-600/10 hover:shadow-xl transition duration-200 ease-in-out">
-      <a href="#/katalog/${data.uuid}" class="group h-96 block rounded-t-lg overflow-hidden relative">
-        <img src="${data.url}"
-        loading="lazy" alt="Photo by Austin Wade" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+    <div class="bg-gray-50 card-item rounded-lg hover:shadow-xl transition duration-200 ease-in-out">
+      <a
+        href="#/katalog/${data.uuid}"
+        class="group h-96 block rounded-t-lg overflow-hidden relative">
+          <img
+            src="${data.url}"
+            loading="lazy"
+            alt="${data.productName}"
+            class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200"
+          />
       </a>
 
       <div class="flex justify-between items-start gap-2 p-6">
         <div class="flex flex-col">
-          <a href="#/katalog/${data.uuid}" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}</a>
-          <span class="text-gray-500 text-sm lg:text-base">${data.user.name} - ${data.user.university}</span>
+          <a
+            href="#/katalog/${data.uuid}"
+            class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">${data.productName}
+          </a>
+          <span
+            class="text-gray-500 text-sm lg:text-base">
+            ${data.user.name} - ${data.user.university}
+          </span>
         </div>
 
         <div class="flex flex-col items-end">
-          <span class="text-gray-600 lg:text-lg font-bold">Rp.${data.price}</span>
+          <span
+            class="text-gray-600 lg:text-lg font-bold">
+              Rp.${data.price}
+          </span>
         </div>
       </div>
     </div>
@@ -45,10 +60,10 @@ class ListSection extends HTMLElement {
                 name="sort_by"
                 class="rounded-md border text-sm w-32 md:w-60"
                 >
-                <option readonly>Semua Produk</option>
-                <option>Universitas Bandar Lampung</option>
-                <option>Universitas Lampung</option>
-                <option>Universitas Muhammadiyah Riau</option>
+                  <option readonly>Semua Produk</option>
+                  <option>Universitas Bandar Lampung</option>
+                  <option>Universitas Lampung</option>
+                  <option>Universitas Muhammadiyah Riau</option>
               </select>
             </div>
           </div>
