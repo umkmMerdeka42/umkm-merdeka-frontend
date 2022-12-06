@@ -60,10 +60,15 @@ class ListSection extends HTMLElement {
                 name="sort_by"
                 class="rounded-md border text-sm w-32 md:w-60"
                 >
-                  <option readonly>Semua Produk</option>
-                  <option>Universitas Bandar Lampung</option>
-                  <option>Universitas Lampung</option>
-                  <option>Universitas Muhammadiyah Riau</option>
+                <option>Pilih Kategori...</option>
+                <option>Alat Dapur</option>
+                <option>Alat Tulis</option>
+                <option>Fashion</option>
+                <option>Teknologi</option>
+                <option>Jasa</option>
+                <option>Musik</option>
+                <option>Makanan</option>
+                <option>Minuman</option>
               </select>
             </div>
           </div>
@@ -76,9 +81,9 @@ class ListSection extends HTMLElement {
     `;
     const sorting = this.querySelector('#SortBy');
     sorting.addEventListener('change', () => {
-      const filteredUniv = item.filter((data) => data.user.university === sorting.value);
+      const filteredCategory = item.filter((data) => data.category === sorting.value);
       const card = document.querySelector('.carding');
-      card.innerHTML = filteredUniv.map((data) => cardList(data)).join('');
+      card.innerHTML = filteredCategory.map((data) => cardList(data)).join('');
 
       if (sorting.value === 'Semua Produk') {
         card.innerHTML = item.map((data) => cardList(data)).join('');
