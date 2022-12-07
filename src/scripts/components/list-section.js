@@ -49,7 +49,7 @@ class ListSection extends HTMLElement {
           <div>
             <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Semua Produk</h2>
             <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Menampilkan semua produk yang ada di UMKM Merdeka</p>
-            <div class="py-5 flex justify-between">
+            <div class="py-5 flex flex-col items-center md:flex-row md:justify-between">
               <!-- searching -->
               <search-bar></search-bar>
               <!-- sorting -->
@@ -58,7 +58,7 @@ class ListSection extends HTMLElement {
               <select
                 id="SortBy"
                 name="sort_by"
-                class="rounded-md border text-sm w-32 md:w-60"
+                class="rounded-md border text-sm py-3 px-4 w-44 md:w-60"
                 >
                 <option>Pilih Kategori...</option>
                 <option>Alat Dapur</option>
@@ -85,7 +85,7 @@ class ListSection extends HTMLElement {
       const card = document.querySelector('.carding');
       card.innerHTML = filteredCategory.map((data) => cardList(data)).join('');
 
-      if (sorting.value === 'Semua Produk') {
+      if (sorting.value === 'Pilih Kategori...') {
         card.innerHTML = item.map((data) => cardList(data)).join('');
       }
     });
