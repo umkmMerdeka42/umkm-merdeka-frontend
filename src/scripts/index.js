@@ -12,6 +12,7 @@ import './components/faq-section';
 import './components/card-home';
 import './components/wishlist-page';
 import './components/search-bar';
+import './components/signup-promotion';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';

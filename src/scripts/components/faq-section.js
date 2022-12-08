@@ -6,12 +6,12 @@ class FaqSection extends HTMLElement {
   render() {
     this.innerHTML = /* html */ `
     <div class="container lg:my-10 px-6 mx-auto">
-      <section class="mb-32 text-gray-800">
+      <section class="mb-14 lg:mb-0 text-gray-800">
         <div class="container mx-auto xl:px-32 text-center lg:text-left">
           <div class="grid lg:grid-cols-2 items-center">
-            <div class="mb-12 lg:mb-0">
+            <div>
               <div
-                class="block rounded-lg lg:shadow-lg bg-white/70 px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14 lg:backdrop-blur-xl"
+                class="block rounded-xl shadow-lg bg-white/70 px-6 py-12 lg:py-6 xl:py-12 md:px-12 lg:-mr-14 backdrop-blur-xl"
               >
               <h3 class="text-2xl font-bold mb-3">Kenapa Sih Harus UMKM Merdeka ?</h3>
               <h5 class="text-lg text-blue-600 font-bold mb-12 lg:mb-10 xl:mb-12">Kamu Nanyeaa ?, Yuk Aku Kasih Tau...</h5>

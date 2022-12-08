@@ -8,6 +8,7 @@ class HomePage extends HTMLElement {
       <hero-section></hero-section>
       <card-home></card-home>
       <faq-section></faq-section>
+      <Signup-promotion></Signup-promotion>
     `;
   }
 }

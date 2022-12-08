@@ -33,7 +33,7 @@ class HeroSection extends HTMLElement {
                 <h1 class="font-extrabold text-5xl md:text-6xl xl:text-7xl mb-3">UMKM MERDEKA</h1>
                 <h2 class="text-blue-600 text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
                 <a
-                  href="http://localhost:3000/dashboard"
+                  href="http://localhost:3000/register"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                   role="button"

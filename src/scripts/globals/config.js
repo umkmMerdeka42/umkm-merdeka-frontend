@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: 'http://localhost:5000/',
+  BASE_URL: 'https://umkm-merdeka-api.up.railway.app/',
   CACHE_NAME: new Date().toISOString(),
   DATABASE_NAME: 'umkm-merdeka-database',
   DATABASE_VERSION: 1,
