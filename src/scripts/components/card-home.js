@@ -58,7 +58,7 @@ class CardHome extends HTMLElement {
               type="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              class="inline-block px-8 py-4 bg-blue-600 text-white font-medium text-md leading-tight rounded-full min-h-[44px] min-w-[44px] shadow-lg hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-400 active:shadow-lg transition duration-150 ease-in-out"
+              class="inline-block px-8 py-4 bg-secondary text-white font-medium text-md leading-tight rounded-full min-h-[44px] min-w-[44px] shadow-lg hover:bg-primary hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary active:shadow-lg transition duration-150 ease-in-out"
             >Lihat Lebih Banyak</button>
             </a>
           </div>

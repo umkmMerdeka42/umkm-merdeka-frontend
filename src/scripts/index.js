@@ -14,6 +14,7 @@ import './components/wishlist-page';
 import './components/search-bar';
 import './components/signup-promotion';
 import './components/our-advantage';
+import './components/message-info';
 import 'tw-elements';
 import 'animate.css';
 import App from './views/app';

@@ -31,13 +31,13 @@ class HeroSection extends HTMLElement {
             <div class="flex justify-center items-center flex-col-reverse lg:flex-row">
               <div class="md:w-[70%] lg:w-[50%] animate__animated animate__fadeInLeft">
                 <h1 class="font-extrabold text-5xl md:text-6xl xl:text-7xl mb-3">UMKM MERDEKA</h1>
-                <h2 class="text-blue-600 text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
+                <h2 class="text-secondary text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
                 <a
                   href="https://umkm-merdeka-dashboard-apps.vercel.app/register"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                   role="button"
-                  class="inline-block px-7 py-3 mr-2 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                  class="inline-block px-7 py-3 mr-2 bg-secondary text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-primary hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary active:shadow-lg transition duration-150 ease-in-out">
                     Join Bareng Kami!
                 </a>
                 <a
@@ -45,7 +45,7 @@ class HeroSection extends HTMLElement {
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                   role="button"
-                  class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-400 transition-all duration-200 ease-in-out">
+                  class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-secondary font-medium text-sm leading-snug uppercase rounded hover:text-primary transition-all duration-200 ease-in-out">
                     Tentang Kami
                 </a>
               </div>
