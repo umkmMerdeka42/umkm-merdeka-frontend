@@ -60,21 +60,22 @@ class ListSection extends HTMLElement {
                 name="sort_by"
                 class="rounded-md border text-sm py-3 px-4 w-[330px] md:w-60"
                 >
-                <option>Pilih Kategori...</option>
-                <option>Alat Dapur</option>
-                <option>Alat Tulis</option>
-                <option>Fashion</option>
-                <option>Teknologi</option>
-                <option>Jasa</option>
-                <option>Musik</option>
-                <option>Makanan</option>
-                <option>Minuman</option>
+                  <option readOnly>Pilih Kategori...</option>
+                  <option>Alat Dapur</option>
+                  <option>Alat Tulis</option>
+                  <option>Fashion</option>
+                  <option>Kebutuhan Rumah Tangga</option>
+                  <option>Teknologi</option>
+                  <option>Jasa</option>
+                  <option>Musik</option>
+                  <option>Makanan</option>
+                  <option>Minuman</option>
               </select>
             </div>
           </div>
 
           <div class="carding grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            ${item.map((data) => cardList(data)).join('')}
+            ${item.map((data) => cardList(data)).reverse().join('')}
           </div>
         </div>
       </div>
