@@ -60,16 +60,18 @@ class ListSection extends HTMLElement {
                 name="sort_by"
                 class="rounded-md border text-sm py-3 px-4 w-[330px] md:w-60"
                 >
-                  <option readOnly>Pilih Kategori...</option>
-                  <option>Alat Dapur</option>
-                  <option>Alat Tulis</option>
-                  <option>Fashion</option>
-                  <option>Kebutuhan Rumah Tangga</option>
-                  <option>Teknologi</option>
-                  <option>Jasa</option>
-                  <option>Musik</option>
-                  <option>Makanan</option>
-                  <option>Minuman</option>
+                <option readOnly>Pilih Kategori...</option>
+                <option>Aksesoris</option>
+                <option>Alat Dapur</option>
+                <option>Alat Tulis</option>
+                <option>Fashion</option>
+                <option>Kebutuhan Rumah Tangga</option>
+                <option>Kerajinan Tangan</option>
+                <option>Teknologi</option>
+                <option>Jasa</option>
+                <option>Musik</option>
+                <option>Makanan</option>
+                <option>Minuman</option>
               </select>
             </div>
           </div>

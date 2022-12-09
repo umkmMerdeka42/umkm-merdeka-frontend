@@ -33,7 +33,7 @@ class FaqSection extends HTMLElement {
               <img
                 src="images/picture/faq-picture.png"
                 class="w-full rounded-lg shadow-lg hidden lg:block"
-                alt=""
+                alt="kenapa harus umkm merdeka"
               />
             </div>
           </div>

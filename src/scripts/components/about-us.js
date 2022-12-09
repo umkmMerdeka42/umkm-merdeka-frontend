@@ -66,14 +66,14 @@ class AboutUs extends HTMLElement {
                   <div class="w-full px-3 sm:px-4 xl:w-1/2">
                     <div class="py-3 sm:py-4">
                       <img
-                      src="https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      src="images/picture/ubl.jpeg"
                       alt=""
                       class="w-full rounded-2xl"
                         />
                     </div>
                     <div class="py-3 sm:py-4">
                       <img
-                      src="https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      src="images/picture/umri.jpeg"
                       alt=""
                       class="w-full rounded-2xl"
                       />
@@ -82,7 +82,7 @@ class AboutUs extends HTMLElement {
                   <div class="w-full px-3 sm:px-4 xl:w-1/2">
                     <div class="relative z-10 my-4">
                       <img
-                      src="https://images.pexels.com/photos/3194519/pexels-photo-3194519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      src="images/picture/unila.jpeg"
                       alt=""
                       class="w-full rounded-2xl"
                       />
@@ -134,10 +134,10 @@ class AboutUs extends HTMLElement {
       
             <div class="w-full lg:w-1/2 flex mb-12 md:mb-16">
               <div class="image1 opacity-0 bg-gray-100 rounded-2xl shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
-                <img src="https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center" />
+                <img src="images/picture/anti-rungkad.jpeg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center" />
               </div>
               <div class="image2 opacity-0 bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
-                <img src="https://i.pinimg.com/564x/72/ec/54/72ec541d92281f6acb3309d63602bb3d.jpg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center"/>
+                <img src="images/picture/FIK.jpeg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center"/>
               </div>
             </div>
           </div>

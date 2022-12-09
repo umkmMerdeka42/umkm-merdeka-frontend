@@ -33,7 +33,7 @@ class HeroSection extends HTMLElement {
                 <h1 class="font-extrabold text-5xl md:text-6xl xl:text-7xl mb-3">UMKM MERDEKA</h1>
                 <h2 class="text-blue-600 text-3xl lg:text-4xl font-bold mb-10">Usaha Mahasiswa Kecil Menengah Merdeka</h2>
                 <a
-                  href="http://localhost:3000/register"
+                  href="https://umkm-merdeka-dashboard-apps.vercel.app/register"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                   role="button"
@@ -45,7 +45,7 @@ class HeroSection extends HTMLElement {
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                   role="button"
-                  class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out">
+                  class="inline-block mt-4 md:mt-0 px-7 py-3 bg-transparent text-blue-600 font-medium text-sm leading-snug uppercase rounded hover:text-blue-400 transition-all duration-200 ease-in-out">
                     Tentang Kami
                 </a>
               </div>

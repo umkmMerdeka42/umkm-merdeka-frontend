@@ -24,6 +24,19 @@ const Home = {
 
     const footerBar = document.querySelector('footer-bar');
     footerBar.classList.remove('hidden');
+
+    window.addEventListener('scroll', () => {
+      const bgPromotion = document.querySelector('.bg-promotion');
+      const innerBGPromotion = document.querySelector('.inner-bg-promotion');
+
+      if (window.pageYOffset >= 3000) {
+        bgPromotion.classList.remove('opacity-0');
+        bgPromotion.classList.add('animate__animated', 'animate__fadeIn');
+
+        innerBGPromotion.classList.remove('opacity-0');
+        innerBGPromotion.classList.add('animate__animated', 'animate__zoomInDown', 'animate__delay-.5s');
+      }
+    });
   },
 };
 
