@@ -5,7 +5,7 @@ class FaqSection extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-    <div class="container lg:my-10 px-6 mx-auto">
+    <div class="container lg:my-16 px-6 mx-auto">
       <section class="mb-14 lg:mb-0 text-gray-800">
         <div class="container mx-auto xl:px-32 text-center lg:text-left">
           <div class="grid lg:grid-cols-2 items-center">
@@ -31,7 +31,7 @@ class FaqSection extends HTMLElement {
 
             <div>
               <img
-                src="https://mdbootstrap.com/img/new/ecommerce/vertical/075.jpg"
+                src="images/picture/faq-picture.png"
                 class="w-full rounded-lg shadow-lg hidden lg:block"
                 alt=""
               />
