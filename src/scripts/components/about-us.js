@@ -14,7 +14,7 @@ class AboutUs extends HTMLElement {
       } = data;
 
       return /* html */ `
-        <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-blue-600">
+        <div class="flex flex-col items-center p-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-secondary">
           <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="${photo}" alt="${name}">
           <h1 class="mt-4 text-xl text-center font-semibold text-gray-700 capitalize group-hover:text-white">${name}</h1>
           <p class="mt-2 text-gray-500 capitalize group-hover:text-gray-300">${role}</p>
@@ -37,7 +37,7 @@ class AboutUs extends HTMLElement {
     };
 
     this.innerHTML = /* html */ `
-      <section class="w-full bg-gradient-to-r from-secondary to-primary">
+      <section class="w-full bg-gradient-to-r from-secondary to-[#6c71b4]">
         <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
           <div class="flex w-full mx-auto text-left">
             <div class="relative inline-flex items-center mx-auto align-middle">

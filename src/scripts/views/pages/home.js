@@ -29,7 +29,7 @@ const Home = {
       const bgPromotion = document.querySelector('.bg-promotion');
       const innerBGPromotion = document.querySelector('.inner-bg-promotion');
 
-      if (window.pageYOffset >= 3000) {
+      if (window.pageYOffset >= 2700) {
         bgPromotion.classList.remove('opacity-0');
         bgPromotion.classList.add('animate__animated', 'animate__fadeIn');
 

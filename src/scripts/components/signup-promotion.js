@@ -5,7 +5,7 @@ class SignupPromotion extends HTMLElement {
 
   render() {
     this.innerHTML = /* html */ `
-      <div class="bg-promotion opacity-0 bg-gradient-to-br from-secondary to-primary py-60 md:bg-gradient-to-r">
+      <div class="bg-promotion opacity-0 bg-gradient-to-br from-secondary to-[#6c71b4] py-60 md:bg-gradient-to-r">
         <div class="inner-bg-promotion opacity-0 container m-auto px-6 text-center md:px-12 lg:px-20">
           <h2 class="mb-8 text-4xl font-bold text-white md:text-4xl">
             Ayo Bergabung dengan UMKM Merdeka Sekarang!

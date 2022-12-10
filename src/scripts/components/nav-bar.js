@@ -23,16 +23,16 @@ class NavigationBar extends HTMLElement {
               <nav id="drawer" class="scale-0 transition duration-200 ease-in-out absolute lg:block lg:scale-100 py-5 bg-white shadow-lg rounded-lg max-w-[200px] w-full right-3 top-16 lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                 <ul class = "block lg:flex">
                   <li>
-                    <a href="#/home" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Home</a>
+                    <a href="#/home" class="text-base text-gray-900 hover:text-secondary py-2 mx-6 flex transition duration-200 ease-in-out">Home</a>
                   </li>
                   <li>
-                    <a href="#/katalog" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Katalog</a>
+                    <a href="#/katalog" class="text-base text-gray-900 hover:text-secondary py-2 mx-6 flex transition duration-200 ease-in-out">Katalog</a>
                   </li>
                   <li>
-                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Wishlist Anda</a>
+                    <a href="#/whistlist" class="text-base text-gray-900 hover:text-secondary py-2 mx-6 flex transition duration-200 ease-in-out">Wishlist Anda</a>
                   </li>
                   <li>
-                    <a href="#/about-us" class="text-base text-gray-900 hover:text-primary py-2 mx-6 flex transition duration-200 ease-in-out">Tentang Kami</a>
+                    <a href="#/about-us" class="text-base text-gray-900 hover:text-secondary py-2 mx-6 flex transition duration-200 ease-in-out">Tentang Kami</a>
                   </li>
                   <li>
                     <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 ml-5 lg:ml-1 lg:mr-2">
@@ -41,8 +41,8 @@ class NavigationBar extends HTMLElement {
                           type="button"
                           data-mdb-ripple="true"
                           data-mdb-ripple-color="light"
-                          class="rounded-sm inline-block px-2 lg:px-2 py-2.5 bg-secondary text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-primary hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary active:shadow-lg transition duration-150 ease-in-out"
-                        >Jualan Sekarang!
+                          class="rounded-md inline-block px-2 lg:px-2 py-2.5 bg-secondary text-white font-medium text-xs leading-tight shadow-md hover:bg-primary hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary active:shadow-lg transition duration-150 ease-in-out"
+                        >Jualan Sekarang
                         </button>
                     </a>
                     </div>

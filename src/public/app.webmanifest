@@ -2,7 +2,7 @@
   "id": "UMKM-MERDELA-pwa",
   "name": "UMKM MERDEKA",
   "theme_color": "#fff",
-  "background_color": "#0d9488",
+  "background_color": "#fff",
   "display": "standalone",
   "start_url": "./index.html",
   "short_name": "UMKM MERDEKA",
