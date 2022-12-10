@@ -36,7 +36,7 @@ class NavigationBar extends HTMLElement {
                   </li>
                   <li>
                     <div class="flex space-x-2 justify-center w-[130px] lg:w-full mt-0.5 ml-5 lg:ml-1 lg:mr-2">
-                      <a href="https://umkm-merdeka-dashboard-apps.vercel.app/dashboard">
+                      <a href="https://umkm-merdeka-dashboard.netlify.app/dashboard">
                         <button
                           type="button"
                           data-mdb-ripple="true"
