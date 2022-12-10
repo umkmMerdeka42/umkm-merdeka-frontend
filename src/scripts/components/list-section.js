@@ -86,10 +86,10 @@ class ListSection extends HTMLElement {
     sorting.addEventListener('change', () => {
       const filteredCategory = item.filter((data) => data.category === sorting.value);
       const card = document.querySelector('.carding');
-      card.innerHTML = filteredCategory.map((data) => cardList(data)).join('');
+      card.innerHTML = filteredCategory.map((data) => cardList(data)).reverse().join('');
 
       if (sorting.value === 'Pilih Kategori...') {
-        card.innerHTML = item.map((data) => cardList(data)).join('');
+        card.innerHTML = item.map((data) => cardList(data)).reverse().join('');
       }
     });
     const searching = this.querySelector('#searchButtonElement');
