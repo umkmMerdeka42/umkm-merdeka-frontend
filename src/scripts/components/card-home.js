@@ -13,8 +13,13 @@ class CardHome extends HTMLElement {
         <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 bg-opacity-50 shadow-2xl shadow-gray-600/10 hover:shadow-xl transition duration-200 ease-in-out">
           <div class="relative overflow-hidden rounded-xl">
             <a href="#/katalog/${data.uuid}">
-              <img src="${data.url}"
-              alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+              <img
+                src="${data.url}"
+                alt="art cover"
+                loading="lazy"
+                width="1000"
+                height="667"
+                class="h-64 w-full object-cover object-center transition duration-500 group-hover:scale-105"/>
             </a>
           </div>
           <div class="mt-6 relative">

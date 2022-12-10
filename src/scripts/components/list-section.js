@@ -97,7 +97,7 @@ class ListSection extends HTMLElement {
       const keyword = this.querySelector('#searchElement').value;
       const searchedProduct = item.filter((data) => data.productName.toUpperCase().includes(keyword.toUpperCase()));
       const card = document.querySelector('.carding');
-      card.innerHTML = searchedProduct.map((data) => cardList(data)).join('');
+      card.innerHTML = searchedProduct.map((data) => cardList(data)).reverse().join('');
     });
 
     const searchingForm = this.querySelector('#searchElement');
@@ -106,11 +106,11 @@ class ListSection extends HTMLElement {
       const card = document.querySelector('.carding');
 
       if (!keyword.length) {
-        card.innerHTML = item.map((data) => cardList(data)).join('');
+        card.innerHTML = item.map((data) => cardList(data)).reverse().join('');
       }
 
       const searchedProduct = item.filter((data) => data.productName.toUpperCase().includes(keyword.toUpperCase()));
-      card.innerHTML = searchedProduct.map((data) => cardList(data)).join('');
+      card.innerHTML = searchedProduct.map((data) => cardList(data)).reverse().join('');
     });
   }
 }

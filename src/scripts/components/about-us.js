@@ -137,7 +137,7 @@ class AboutUs extends HTMLElement {
                 <img src="images/picture/anti-rungkad.jpeg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center" />
               </div>
               <div class="image2 opacity-0 bg-gray-100 rounded-2xl shadow-lg overflow-hidden">
-                <img src="images/picture/FIK.jpeg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center"/>
+                <img src="images/picture/foto-kite.jpg" loading="lazy" alt="Photo by Manny Moreno" class="w-full h-full object-cover object-center" loading="lazy" alt="Photo by Kaung Htet" class="w-full h-full object-cover object-center"/>
               </div>
             </div>
           </div>
