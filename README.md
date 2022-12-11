@@ -34,9 +34,9 @@
 
 ## Fitur Aplikasi di Tampilan Dashboard
 * Authentikasi (Register, Login dan Logout)
-* Pada Role Admin 
+* Pada Role Admin:
   * Admin bisa melakukan aksi CRUD (Create, Read, Update dan Delete) terhadap Keseluruhan User dan Produk
-* Pada Role User
+* Pada Role User:
   * User Hanya bisa melakukan aksi CRUD (Create, Read, Update dan Delete) terhadap produk yang diupload oleh user tersebut.
 ---
 
