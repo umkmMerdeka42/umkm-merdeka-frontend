@@ -1,11 +1,9 @@
-# UMKM MERDEKA (Usaha Mahasiswa Kecil Menengah)
-[![Github? UMKM MERDEKA!](https://badgen.net/badge/Github/UMKM%20Merdeka?color=63BB15&icon=github)](https://github.com/Naereen/badges/)
-![JS](https://img.shields.io/badge/Javascript%20-%23323330.svg?&style=flat&logo=javascript&logoColor=23F7DF1E&color=34495E)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=flat&logo=visual%20studio%20code&logoColor=1589BB&color=626262)
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/115240293/206900117-e206f214-5725-4e0d-b472-9eb77aa86c01.png" width="250px">
+</p>
+<h1 align="center">UMKM MERDEKA (Usaha Mahasiswa Kecil Menengah)</h1>
 
-## Capstone Team
+## Capstone Team C22-087 (FEBE SIB X Dicoding Batch 3)
 * M Aji Perdana - F425X0972 (Universitas Bandar Lampung)
 * Aqsha - F265X0587 (Universitas Muhammadiyah Riau)
 * Nafasya Rahma Safitra - F248Y0533 (Universitas Lampung)
