@@ -66,7 +66,7 @@
 4. Jalankan perintah `npm start` untuk menjalankan projek di mode development
 5. Buka pada url `http://localhost:3000` untuk melihat halaman web dalam mode development
 6. Jalankan perintah `npm run build` untuk melakukan build sistem ketika siap masuk kedalam mode production
-7. Jalankan perintah `serve -s build` dan pilih url `http://localhost:3000/` pada terminal, maka akan mucul halaman web pada browser anda
+7. Jalankan perintah `serve -s build` dan pilih url `http://localhost:3000` pada terminal, maka akan mucul halaman web pada browser anda
 8. Selesai
 
 ## User Guide (Cara Instalasi - Backend(API) - UMKM Merdeka)
